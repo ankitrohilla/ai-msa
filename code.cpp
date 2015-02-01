@@ -32,32 +32,118 @@ int hyphen;
 
 typedef vector<int>::iterator intIterator;
 
-// a state is composed of
-struct state {
+// a state is composed of the starting index of each string
+// goal states is having the last index for each string
+// we have to reach the goal state with the minimum possible cost
+class state {
 
-};
+public:
 
-// input is the set of indices of vocab which represents character of string
-int findCost( vector<int> s ) {
+//    we came to this state after giving this vector to findCost()
+    vector<int> previousCostInput;
 
-    cout << "\nInput to findCost - ";
-    for_each(s.begin(), s.end(), [](int i){cout<<i;});
+//    this is the cost of coming to this state from the previous state i.e. cost incurred by this state
+    int costIncurred;
 
-    int cost = 0;
+//    this is the cost so far to come to this state including this state's cost
+    int costSoFar;
 
-    while( s.size() > 1 ) {
-//        start it from the next element in the list
-        for( intIterator it = s.begin()+1; it != s.end(); it++ ) {
-            cost += (MC.at(*(s.begin()))).at(*it);
+//    starting indices for each string
+    vector<int> startingIndex;
+
+//    vector of strings so far encountered upto this state including hyphen
+    vector<string> stringsSoFar;
+
+    int findCost() {
+
+        vector<int> s;
+        for( int i = 0; i < stringNumber; i++ ) {
+//            string number i with character given at ith index of startingIndex
+            s.push_back( (stringInts.at( i )).at( startingIndex.at(i) ) );
         }
-        s.erase(s.begin());
+
+        int cost = 0;
+
+        while( s.size() > 1 ) {
+//            start it from the next element in the list
+            for( intIterator it = s.begin()+1; it != s.end(); it++ ) {
+                cost += (MC.at(*(s.begin()))).at(*it);
+            }
+            s.erase(s.begin());
+        }
+
+        return cost;
+
     }
 
-    return cost;
+    state() {}
 
-}
+    state( vector<int> i ) {
+        startingIndex = i;
+        costIncurred = findCost();
+    }
+
+//    only used by exploreStates() and getState()
+    vector<state> tempStates;
+    vector<int> tempInts;
+
+    void getState( int i ) {
+
+//        if the whole tempInts has been created and ready
+        if( i == strings.size() ) {
+            tempStates.push_back(*(new state(tempInts)));
+            return;
+        }
+//        i is not referring to the last element
+        tempInts.push_back( startingIndex.at(i)+1 );
+        getState( i+1 );
+
+        tempInts.erase( tempInts.begin()+i, tempInts.end() );
+
+        tempInts.push_back( startingIndex.at(i) );
+
+        getState( i+1 );
+
+    }
+
+//    will return a vector of all next states
+    vector<state> exploreStates() {
+        tempStates.clear();
+        getState( 0 );
+
+//        to remove the last entry which indicates inserting hyphens for each string which is completely useless
+        tempStates.pop_back();
+        return tempStates;
+    }
+
+    bool isGoal() {
+
+//        if the startingIndex of any string in the vector startingIndex is not its end
+//        then this state is not a goal state
+        for( int i = 0; i < stringNumber; i++ ) {
+            if( startingIndex.at(i) < strings.at(i).size()-1 )
+                return false;
+        }
+    }
+
+    void viewStateInfo() {
+        cout << "\nStarting index of each string - ";
+        for_each( startingIndex.begin(), startingIndex.end(), [](int i){cout << i;} );
+        cout << "\nCost to come to this state from the previous state - " << costIncurred;
+    }
+
+}currentState;
+
+// input is the set of indices of vocab which represents character of string
 
 main() {
+
+    currentState.costIncurred = 0;
+    currentState.costSoFar = 0;
+
+//    this vector will hold all the states that will be explored by the currentState
+    vector<state> exploredStates;
+
     cin >> ttime >> vocabNumber;
     hyphen = vocabNumber;
 
@@ -76,6 +162,7 @@ main() {
         string temp;
         cin >> temp;
         strings.push_back(temp);
+        currentState.startingIndex.push_back(0);
     }
 
     cin >> CC;
@@ -128,10 +215,18 @@ main() {
 //    this vector comprising of one character from each stringInts will be fed to findCost()
     vector<int> costInput;
 
-    for( int i = 0; i < )
+    currentState.viewStateInfo();
+
+    exploredStates = currentState.exploreStates();
+
+    cout << endl;
+
+    for_each( exploredStates.begin(), exploredStates.end(), [](state s){s.viewStateInfo();});
 
 
-
+//    do it till the goal state is reached
+//    while( !currentState.isGoal() ) {
+//    }
 
     cout << endl;
     return 0;
