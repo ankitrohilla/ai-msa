@@ -416,6 +416,6 @@ capitol
 cripple
 
 
-Time taken is - 43.95
-States processed - 224162
-States encountered - 3004595
+Time taken is - 12.74
+States processed - 218880
+States encountered - 219010

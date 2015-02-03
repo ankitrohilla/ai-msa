@@ -1,0 +1,36 @@
+
+Input strings
+
+ACAT
+ACCAAGT
+CCAGT
+CAGT
+
+MC
+02221
+20221
+22021
+22201
+11110
+
+stringInts
+0102
+0110032
+11032
+1032
+And the winner is - 
+
+
+Starting index of each string - 4754
+Cost to come to this state from the previous state - 0
+Total cost                                         - 40
+String upto this state including this state - 
+
+-A	C-A-T
+AC	CAAGT
+-C	C-AGT
+--	C-AGT
+
+Time taken is - 20.3606
+States processed - 630111
+States encountered - 630135

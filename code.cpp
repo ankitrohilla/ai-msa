@@ -1,14 +1,24 @@
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <stack>
 #include <string>
 #include <algorithm>
 
 #include <ctime>
 
+class state;
+
 using namespace std;
 
 float ttime;
+
+//final cost
+long minCost = 9999999999;
+
+// for analysis
+long statesProcessed = 0;
+long statesEncountered = 0;
 
 // number of characters
 int vocabNumber;
@@ -116,12 +126,19 @@ public:
 //    only used by exploreStates() and getState()
     vector<state> tempStates;
     vector<int> tempInts;
+    state *tempState;
 
     void getState( int i ) {
 
 //        if the whole tempInts has been created and ready
         if( i == strings.size() ) {
-            tempStates.push_back(*(new state(tempInts, this->startingIndex, this->stringsSoFar, this->costSoFar)));
+
+            tempState = new state(tempInts, this->startingIndex, this->stringsSoFar, this->costSoFar);
+
+//            if the new state can be better than the solution obtained yet, use it
+            if( tempState->costSoFar < minCost )
+                tempStates.push_back(*tempState);
+
             return;
         }
 //        i is not referring to the last element
@@ -144,7 +161,8 @@ public:
         getState( 0 );
 
 //        to remove the last entry which indicates inserting hyphens for each string which is completely useless
-        tempStates.pop_back();
+        if( tempStates.size()>1 )
+            tempStates.pop_back();
         return tempStates;
     }
 
@@ -160,7 +178,7 @@ public:
     }
 
     void viewStateInfo() {
-        cout << "\nStarting index of each string - ";
+        cout << "\n\nStarting index of each string - ";
         for_each( startingIndex.begin(), startingIndex.end(), [](int i){cout << i;} );
         cout << "\nCost to come to this state from the previous state - " << costIncurred;
         cout << "\nTotal cost                                         - " << costSoFar;
@@ -169,7 +187,8 @@ public:
 
     }
 
-}currentState;
+}currentState, minState;
+
 
 // input is the set of indices of vocab which represents character of string
 
@@ -177,7 +196,7 @@ main() {
 
     time_t beg = clock();
 
-    queue<state> pendingStates;
+    stack<state> pendingStates;
 
     currentState.costIncurred = 0;
     currentState.costSoFar = 0;
@@ -257,38 +276,68 @@ main() {
 //    this vector comprising of one character from each stringInts will be fed to findCost()
     vector<int> costInput;
 
-//    APPLYING BFS, POOR IDEA
 
-    long minCost = 9999999999;
-    state minState;
+
+
+
+//    STARTING AI
+
+//    DFS WORKED A BIT BETTER THAN BFS BECAUSE ONE GOAL IS REACHED INSTANTLY
 
 //    do it till the pendingStates is not empty
     do {
+
+        statesEncountered++;
+
+//        goal solution so far is better than any way this state can lead
+        if( currentState.costSoFar >= minCost )
+            goto afterProcess;
 
 //        currentState.viewStateInfo();
 
         if( !currentState.isGoal() ) {
             vector<state> temp = currentState.exploreStates();
-            for_each( temp.begin(), temp.end(), [&](state s){ pendingStates.push(s); } );
+
+//            enstack the highest cost element first so that it will go deeper into the stack
+            sort( temp.begin(), temp.end(), [&](state s1, state s2){
+                    if( s1.costSoFar > s2.costSoFar )
+                        return true;
+                    else
+                        return false;
+                  });
+
+//            cout << "Adding following states to Queue - ";
+            for_each( temp.begin(), temp.end(), [&](state s){
+//                cout << " ";
+//                for_each( s.startingIndex.begin(), s.startingIndex.end(), [](int i){cout << i;});
+                pendingStates.push(s); }
+            );
         } else {
             if( currentState.costSoFar < minCost ) {
                 minCost = currentState.costSoFar;
                 minState = currentState;
+                cout << "\nGoal reached\n";
+                currentState.viewStateInfo();
             }
         }
+        statesProcessed++;
 
-        currentState = pendingStates.front();
+        afterProcess:
+
+        currentState = pendingStates.top();
         pendingStates.pop();
 
     } while( !pendingStates.empty() );
 
-    cout << "And the winner is - \n\n";
+    cout << "\n\n\n\n\n\nAnd the winner is - \n\n";
 
     minState.viewStateInfo();
 
     time_t end = clock();
 
     cout << "\n\nTime taken is - " << float(end - beg)/CLOCKS_PER_SEC;
+    cout << "\nStates processed - " << statesProcessed;
+    cout << "\nStates encountered - " << statesEncountered;
 
     cout << endl;
     return 0;
