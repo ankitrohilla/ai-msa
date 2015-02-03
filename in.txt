@@ -1,10 +1,11 @@
 5.5
 4
 A, C, T, G
-3
-ACTGTGA
-TACTGC
-ACTGA
+4
+CCAC
+TA
+ACCC
+CAC
 3
 0 2 2 2 1
 2 0 2 2 1

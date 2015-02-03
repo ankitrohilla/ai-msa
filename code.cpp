@@ -1,7 +1,10 @@
 #include <iostream>
 #include <vector>
+#include <queue>
 #include <string>
 #include <algorithm>
+
+#include <ctime>
 
 using namespace std;
 
@@ -39,6 +42,9 @@ class state {
 
 public:
 
+//    pointer to the previous state
+    state *previousState;
+
 //    we came to this state after giving this vector to findCost()
     vector<int> previousCostInput;
 
@@ -51,16 +57,15 @@ public:
 //    starting indices for each string
     vector<int> startingIndex;
 
+//    this is to be fed to findCost to find costIncurred, this will include hyphens
+    vector<int> currentConcern;
+
 //    vector of strings so far encountered upto this state including hyphen
     vector<string> stringsSoFar;
 
     int findCost() {
 
-        vector<int> s;
-        for( int i = 0; i < stringNumber; i++ ) {
-//            string number i with character given at ith index of startingIndex
-            s.push_back( (stringInts.at( i )).at( startingIndex.at(i) ) );
-        }
+        vector<int> s(currentConcern);
 
         int cost = 0;
 
@@ -78,9 +83,34 @@ public:
 
     state() {}
 
-    state( vector<int> i ) {
-        startingIndex = i;
-        costIncurred = findCost();
+//    1st argument is the startingIndex of this state
+//    2nd argument is the startingIndex of the previous state
+//    3rd argument is the stringsSoFar of the previous state
+//    4th argument is costSoFar of the previous state
+    state( vector<int> startingIndex, vector<int> previousStartingIndex, vector<string> previousStringsSoFar, int previousCostSoFar ) {
+        this->startingIndex = startingIndex;
+
+        this->costIncurred = 0;
+
+        for( int i = 0; i < stringNumber; i++ ) {
+            string temp = previousStringsSoFar.at(i);
+
+            if( startingIndex.at(i) > previousStartingIndex.at(i) ) {
+                temp.push_back( (strings.at(i)).at(previousStartingIndex.at(i)) );
+                currentConcern.push_back( (stringInts.at(i)).at(previousStartingIndex.at(i)) );
+            } else {
+                temp.push_back( '-' );
+                currentConcern.push_back( vocabNumber );
+                costIncurred += CC;
+            }
+
+            stringsSoFar.push_back( temp );
+
+        }
+
+//        find cost incurred after matching
+        costIncurred += findCost();
+        costSoFar = costIncurred + previousCostSoFar;
     }
 
 //    only used by exploreStates() and getState()
@@ -91,14 +121,16 @@ public:
 
 //        if the whole tempInts has been created and ready
         if( i == strings.size() ) {
-            tempStates.push_back(*(new state(tempInts)));
+            tempStates.push_back(*(new state(tempInts, this->startingIndex, this->stringsSoFar, this->costSoFar)));
             return;
         }
 //        i is not referring to the last element
-        tempInts.push_back( startingIndex.at(i)+1 );
-        getState( i+1 );
 
-        tempInts.erase( tempInts.begin()+i, tempInts.end() );
+        if( strings.at(i).size() > startingIndex.at(i) ) {
+            tempInts.push_back( startingIndex.at(i)+1 );
+            getState( i+1 );
+            tempInts.erase( tempInts.begin()+i, tempInts.end() );
+        }
 
         tempInts.push_back( startingIndex.at(i) );
 
@@ -121,15 +153,20 @@ public:
 //        if the startingIndex of any string in the vector startingIndex is not its end
 //        then this state is not a goal state
         for( int i = 0; i < stringNumber; i++ ) {
-            if( startingIndex.at(i) < strings.at(i).size()-1 )
+            if( startingIndex.at(i) < strings.at(i).size() )
                 return false;
         }
+        return true;
     }
 
     void viewStateInfo() {
         cout << "\nStarting index of each string - ";
         for_each( startingIndex.begin(), startingIndex.end(), [](int i){cout << i;} );
         cout << "\nCost to come to this state from the previous state - " << costIncurred;
+        cout << "\nTotal cost                                         - " << costSoFar;
+        cout << "\nString upto this state including this state - \n";
+        for_each( stringsSoFar.begin(), stringsSoFar.end(), [](string s){cout << s << endl;} );
+
     }
 
 }currentState;
@@ -137,6 +174,10 @@ public:
 // input is the set of indices of vocab which represents character of string
 
 main() {
+
+    time_t beg = clock();
+
+    queue<state> pendingStates;
 
     currentState.costIncurred = 0;
     currentState.costSoFar = 0;
@@ -163,6 +204,7 @@ main() {
         cin >> temp;
         strings.push_back(temp);
         currentState.startingIndex.push_back(0);
+        currentState.stringsSoFar.push_back( *(new string()) );
     }
 
     cin >> CC;
@@ -215,18 +257,38 @@ main() {
 //    this vector comprising of one character from each stringInts will be fed to findCost()
     vector<int> costInput;
 
-    currentState.viewStateInfo();
+//    APPLYING BFS, POOR IDEA
 
-    exploredStates = currentState.exploreStates();
+    long minCost = 9999999999;
+    state minState;
 
-    cout << endl;
+//    do it till the pendingStates is not empty
+    do {
 
-    for_each( exploredStates.begin(), exploredStates.end(), [](state s){s.viewStateInfo();});
+//        currentState.viewStateInfo();
 
+        if( !currentState.isGoal() ) {
+            vector<state> temp = currentState.exploreStates();
+            for_each( temp.begin(), temp.end(), [&](state s){ pendingStates.push(s); } );
+        } else {
+            if( currentState.costSoFar < minCost ) {
+                minCost = currentState.costSoFar;
+                minState = currentState;
+            }
+        }
 
-//    do it till the goal state is reached
-//    while( !currentState.isGoal() ) {
-//    }
+        currentState = pendingStates.front();
+        pendingStates.pop();
+
+    } while( !pendingStates.empty() );
+
+    cout << "And the winner is - \n\n";
+
+    minState.viewStateInfo();
+
+    time_t end = clock();
+
+    cout << "\n\nTime taken is - " << float(end - beg)/CLOCKS_PER_SEC;
 
     cout << endl;
     return 0;
