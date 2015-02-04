@@ -1,21 +1,53 @@
 
 Input strings
-ACAT
-ACCAAGT
-CCAGT
-CAGT
-CG
+castle
+cable
+capitol
+cripple
 
 MC
-02221
-20221
-22021
-22201
-11110
+022222222221
+202222222221
+220222222221
+222022222221
+222202222221
+222220222221
+222222022221
+222222202221
+222222220221
+222222222021
+222222222201
+111111111110
 
 stringInts
-0102
-0110032
-11032
-1032
-13
+012345
+01645
+0178394
+01087745
+Destructed  1000000
+Constructed 1000000
+Destructed  2000000
+Destructed  3000000
+
+
+
+
+
+
+And the winner is - 
+
+
+
+Starting index of each string - 6577
+Cost to come to this state from the previous state - 6
+Total cost                                         - 52
+String upto this state including this state - 
+ca-stle
+ca--ble
+capitol
+cripple
+
+
+Time taken is - 9.88436
+States processed - 140311
+States encountered - 140417

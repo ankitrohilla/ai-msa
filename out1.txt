@@ -1,438 +1,119 @@
 
 Input strings
-castle
-cable
-capitol
-cripple
-
-Q> which to choose
-
-c c c c c c c c - - - - - - -
-c c c c - - - - c c c c - - -
-c c - - c c - - c c - - c c -
-c - c - c - c - c - c - c - c
-
-
+ACTGCAGT
+CTATGA
+ATCAGTG
+ATGTCGA
+CACTAG
+CATTGCA
 
 MC
-022222222221
-202222222221
-220222222221
-222022222221
-222202222221
-222220222221
-222222022221
-222222202221
-222222220221
-222222222021
-222222222201
-111111111110
+01111
+10121
+11012
+12101
+11210
 
 stringInts
-012345
-01645
-0178394
-01087745
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 12
-Total cost                                         - 208
-String upto this state including this state - 
-ca-------------stle
-ca----------ble----
-ca--p---itol-------
-c-ripple-----------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 194
-String upto this state including this state - 
-ca------------stle
-ca----------bl---e
-ca--p---itol------
-c-ripple----------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 180
-String upto this state including this state - 
-ca-----------stle
-ca----------b--le
-ca--p---itol-----
-c-ripple---------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 168
-String upto this state including this state - 
-ca----------stle
-ca-----------ble
-ca--p---itol----
-c-ripple--------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 164
-String upto this state including this state - 
-ca----------stle
-ca---------b--le
-ca--p---ito---l-
-c-ripple--------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 152
-String upto this state including this state - 
-ca---------stle
-ca----------ble
-ca--p---ito--l-
-c-ripple-------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 144
-String upto this state including this state - 
-ca--------stle
-ca---------ble
-ca--p---it--ol
-c-ripple------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 140
-String upto this state including this state - 
-ca--------stle
-ca---------ble
-ca--p---it-ol-
-c-ripple------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 138
-String upto this state including this state - 
-ca-------st-le
-ca---------ble
-ca--p---i-tol-
-c-ripple------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 130
-String upto this state including this state - 
-ca-------stle
-ca--------ble
-ca--p---i-tol
-c-ripple-----
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 128
-String upto this state including this state - 
-ca-------stle
-ca--------ble
-ca--p---itol-
-c-ripple-----
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 126
-String upto this state including this state - 
-ca------st-le
-ca--------ble
-ca--p---itol-
-c-ripple-----
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 118
-String upto this state including this state - 
-ca------stle
-ca-------ble
-ca--p---itol
-c-ripple----
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 114
-String upto this state including this state - 
-ca------stle
-ca-------ble
-ca--p--i-tol
-c-rippl----e
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 112
-String upto this state including this state - 
-ca------stle
-ca-------ble
-ca--p--itol-
-c-rippl----e
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 110
-String upto this state including this state - 
-ca-----st-le
-ca-------ble
-ca--p--itol-
-c-rippl----e
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 102
-String upto this state including this state - 
-ca-----stle
-ca------ble
-ca--p--itol
-c-rippl---e
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 98
-String upto this state including this state - 
-ca-----stle
-ca------ble
-ca--p-i-tol
-c-ripp---le
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 94
-String upto this state including this state - 
-ca-----stle
-ca------ble
-ca--p-itol-
-c-ripp---le
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 92
-String upto this state including this state - 
-ca----st-le
-ca------ble
-ca--p-itol-
-c-ripp---le
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 86
-String upto this state including this state - 
-ca----stle
-ca-----ble
-ca--p-itol
-c-ripp--le
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 82
-String upto this state including this state - 
-ca----stle
-ca-----ble
-ca--pitol-
-c-rip--ple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 80
-String upto this state including this state - 
-ca---st-le
-ca-----ble
-ca--pitol-
-c-rip--ple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 74
-String upto this state including this state - 
-ca---stle
-ca----ble
-ca--pitol
-c-rip-ple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 70
-String upto this state including this state - 
-ca---stle
-ca----ble
-ca-pitol-
-c-r-ipple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 68
-String upto this state including this state - 
-ca--st-le
-ca----ble
-ca-pitol-
-c-r-ipple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 64
-String upto this state including this state - 
-ca--stle
-ca---ble
-ca-pitol
-c-ripple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 62
-String upto this state including this state - 
-ca--stle
-ca---ble
-capi-tol
-c-ripple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 58
-String upto this state including this state - 
-ca--stle
-ca---ble
-capitol-
-c-ripple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 56
-String upto this state including this state - 
-ca-st-le
-ca---ble
-capitol-
-c-ripple
+01231032
+120230
+0210323
+0232130
+101203
+1022310
 Destructed  1000000
 Constructed 1000000
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 52
-String upto this state including this state - 
-ca-stle
-ca--ble
-capitol
-cripple
 Destructed  2000000
+ZERO cost found
+ZERO cost found
 Destructed  3000000
 Constructed 2000000
+ZERO cost found
 Destructed  4000000
+ZERO cost found
+ZERO cost found
 Constructed 3000000
 Destructed  5000000
-
-
-
-
-
-
-And the winner is - 
-
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 52
-String upto this state including this state - 
-ca-stle
-ca--ble
-capitol
-cripple
-
-
-Time taken is - 13.63
-States processed - 218880
-States encountered - 219010
+Destructed  6000000
+ZERO cost found
+ZERO cost found
+Constructed 4000000
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+Destructed  7000000
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+Constructed 5000000
+ZERO cost found
+ZERO cost found
+ZERO cost found
+Destructed  8000000
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+Destructed  9000000
+Constructed 6000000
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+Destructed  10000000
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+Constructed 7000000
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+ZERO cost found
+Destructed  11000000

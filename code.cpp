@@ -301,6 +301,8 @@ main() {
 
 
 //    STARTING AI
+    pendingStates.push( currentState );
+
 
 //    DFS WORKED A BIT BETTER THAN BFS BECAUSE ONE GOAL IS REACHED INSTANTLY
 
@@ -308,6 +310,9 @@ main() {
     do {
 
 //        cout << "Stack size is " << pendingStates.size() << endl;
+        currentState = pendingStates.top();
+        pendingStates.pop();
+
 
         statesEncountered++;
 
@@ -315,7 +320,7 @@ main() {
         if( currentState.costSoFar >= minCost )
             goto afterProcess;
 
-        currentState.viewStateInfo();
+//        currentState.viewStateInfo();
 
         if( !currentState.isGoal() ) {
             vector<state> temp = currentState.exploreStates();
@@ -328,12 +333,15 @@ main() {
                         return false;
                   });
 
-//            cout << "Adding following states to Queue - ";
-            for_each( temp.begin(), temp.end(), [&](state s){
-//                cout << " ";
-//                for_each( s.startingIndex.begin(), s.startingIndex.end(), [](int i){cout << i;});
-                pendingStates.push(s); }
-            );
+            if( temp.size() > 1 && temp.back().costIncurred == 0 ) {
+                cout << "ZERO cost found\n";
+                pendingStates.push(temp.back());
+                temp.clear();
+            } else {
+                for_each( temp.begin(), temp.end(), [&](state s){
+                    pendingStates.push(s); }
+                );
+            }
         } else {
             if( currentState.costSoFar < minCost ) {
                 minCost = currentState.costSoFar;
@@ -344,10 +352,7 @@ main() {
         }
         statesProcessed++;
 
-        afterProcess:
-
-        currentState = pendingStates.top();
-        pendingStates.pop();
+        afterProcess:;
 
     } while( !pendingStates.empty() );
 
