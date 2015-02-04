@@ -13,6 +13,8 @@ using namespace std;
 
 float ttime;
 
+long c = 0 , d = 0;
+
 //final cost
 long minCost = 9999999999;
 
@@ -98,6 +100,10 @@ public:
 //    3rd argument is the stringsSoFar of the previous state
 //    4th argument is costSoFar of the previous state
     state( vector<int> startingIndex, vector<int> previousStartingIndex, vector<string> previousStringsSoFar, int previousCostSoFar ) {
+
+        c++;
+        if( !(c % 1000000) )
+            cout << "Constructed " << c << endl;
         this->startingIndex = startingIndex;
 
         this->costIncurred = 0;
@@ -123,6 +129,18 @@ public:
         costSoFar = costIncurred + previousCostSoFar;
     }
 
+    ~state() {
+        d++;
+        if( !(d % 1000000) )
+            cout << "Destructed  " << d << endl;
+        this->currentConcern.clear();
+        this->previousCostInput.clear();
+        this->startingIndex.clear();
+        this->stringsSoFar.clear();
+        this->tempInts.clear();
+        this->tempStates.clear();
+    }
+
 //    only used by exploreStates() and getState()
     vector<state> tempStates;
     vector<int> tempInts;
@@ -138,6 +156,8 @@ public:
 //            if the new state can be better than the solution obtained yet, use it
             if( tempState->costSoFar < minCost )
                 tempStates.push_back(*tempState);
+            else
+                delete tempState;
 
             return;
         }
@@ -287,13 +307,15 @@ main() {
 //    do it till the pendingStates is not empty
     do {
 
+//        cout << "Stack size is " << pendingStates.size() << endl;
+
         statesEncountered++;
 
 //        goal solution so far is better than any way this state can lead
         if( currentState.costSoFar >= minCost )
             goto afterProcess;
 
-//        currentState.viewStateInfo();
+        currentState.viewStateInfo();
 
         if( !currentState.isGoal() ) {
             vector<state> temp = currentState.exploreStates();

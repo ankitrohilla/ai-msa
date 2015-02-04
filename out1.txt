@@ -5,6 +5,15 @@ cable
 capitol
 cripple
 
+Q> which to choose
+
+c c c c c c c c - - - - - - -
+c c c c - - - - c c c c - - -
+c c - - c c - - c c - - c c -
+c - c - c - c - c - c - c - c
+
+
+
 MC
 022222222221
 202222222221
@@ -384,6 +393,8 @@ ca-st-le
 ca---ble
 capitol-
 c-ripple
+Destructed  1000000
+Constructed 1000000
 
 Goal reached
 
@@ -396,6 +407,12 @@ ca-stle
 ca--ble
 capitol
 cripple
+Destructed  2000000
+Destructed  3000000
+Constructed 2000000
+Destructed  4000000
+Constructed 3000000
+Destructed  5000000
 
 
 
@@ -416,6 +433,6 @@ capitol
 cripple
 
 
-Time taken is - 12.74
+Time taken is - 13.63
 States processed - 218880
 States encountered - 219010
