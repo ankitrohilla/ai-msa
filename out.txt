@@ -1,9 +1,9 @@
 
 Input strings
-castle
-cable
-capitol
-cripple
+cas
+as
+s
+as
 
 MC
 022222222221
@@ -20,383 +20,1524 @@ MC
 111111111110
 
 stringInts
-012345
-01645
-0178394
-01087745
+012
+12
+2
+12
+Stack size is 1
 
-Goal reached
+
+Starting index of each string - 0000
+Cost to come to this state from the previous state - 0
+Total cost                                         - 0
+String upto this state including this state - 
 
 
-Starting index of each string - 6577
+
+
+
+Adding to stack the states - 1111 1110 1101 1100 1011 1010 1001 1000 0111 0110 0101 0100 0011 0010 0001 0000 Stack size is 15
+
+
+Starting index of each string - 0101
+Cost to come to this state from the previous state - 10
+Total cost                                         - 10
+String upto this state including this state - 
+-
+a
+-
+a
+
+Adding to stack the states - 1212 1211 1202 1201 1112 1111 1102 1101 0212 0211 0202 0201 0112 0111 0102 0101 Stack size is 29
+
+
+Starting index of each string - 0212
+Cost to come to this state from the previous state - 6
+Total cost                                         - 16
+String upto this state including this state - 
+--
+as
+-s
+as
+
+Adding to stack the states - 1212 0212 Stack size is 29
+
+
+Starting index of each string - 1212
 Cost to come to this state from the previous state - 12
-Total cost                                         - 208
+Total cost                                         - 28
 String upto this state including this state - 
-ca-------------stle
-ca----------ble----
-ca--p---itol-------
-c-ripple-----------
+--c
+as-
+-s-
+as-
 
-Goal reached
+Adding to stack the states - 2212 1212 Stack size is 29
 
 
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 194
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 40
 String upto this state including this state - 
-ca------------stle
-ca----------bl---e
-ca--p---itol------
-c-ripple----------
+--ca
+as--
+-s--
+as--
 
-Goal reached
+Adding to stack the states - 3212 2212 Stack size is 29
 
 
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 180
-String upto this state including this state - 
-ca-----------stle
-ca----------b--le
-ca--p---itol-----
-c-ripple---------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 168
-String upto this state including this state - 
-ca----------stle
-ca-----------ble
-ca--p---itol----
-c-ripple--------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 164
-String upto this state including this state - 
-ca----------stle
-ca---------b--le
-ca--p---ito---l-
-c-ripple--------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 152
-String upto this state including this state - 
-ca---------stle
-ca----------ble
-ca--p---ito--l-
-c-ripple-------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 144
-String upto this state including this state - 
-ca--------stle
-ca---------ble
-ca--p---it--ol
-c-ripple------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 140
-String upto this state including this state - 
-ca--------stle
-ca---------ble
-ca--p---it-ol-
-c-ripple------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 138
-String upto this state including this state - 
-ca-------st-le
-ca---------ble
-ca--p---i-tol-
-c-ripple------
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 130
-String upto this state including this state - 
-ca-------stle
-ca--------ble
-ca--p---i-tol
-c-ripple-----
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 128
-String upto this state including this state - 
-ca-------stle
-ca--------ble
-ca--p---itol-
-c-ripple-----
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 126
-String upto this state including this state - 
-ca------st-le
-ca--------ble
-ca--p---itol-
-c-ripple-----
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 10
-Total cost                                         - 118
-String upto this state including this state - 
-ca------stle
-ca-------ble
-ca--p---itol
-c-ripple----
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 114
-String upto this state including this state - 
-ca------stle
-ca-------ble
-ca--p--i-tol
-c-rippl----e
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 112
-String upto this state including this state - 
-ca------stle
-ca-------ble
-ca--p--itol-
-c-rippl----e
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 110
-String upto this state including this state - 
-ca-----st-le
-ca-------ble
-ca--p--itol-
-c-rippl----e
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 102
-String upto this state including this state - 
-ca-----stle
-ca------ble
-ca--p--itol
-c-rippl---e
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 98
-String upto this state including this state - 
-ca-----stle
-ca------ble
-ca--p-i-tol
-c-ripp---le
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 94
-String upto this state including this state - 
-ca-----stle
-ca------ble
-ca--p-itol-
-c-ripp---le
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 92
-String upto this state including this state - 
-ca----st-le
-ca------ble
-ca--p-itol-
-c-ripp---le
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 86
-String upto this state including this state - 
-ca----stle
-ca-----ble
-ca--p-itol
-c-ripp--le
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 82
-String upto this state including this state - 
-ca----stle
-ca-----ble
-ca--pitol-
-c-rip--ple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 80
-String upto this state including this state - 
-ca---st-le
-ca-----ble
-ca--pitol-
-c-rip--ple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 74
-String upto this state including this state - 
-ca---stle
-ca----ble
-ca--pitol
-c-rip-ple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 70
-String upto this state including this state - 
-ca---stle
-ca----ble
-ca-pitol-
-c-r-ipple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 68
-String upto this state including this state - 
-ca--st-le
-ca----ble
-ca-pitol-
-c-r-ipple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 64
-String upto this state including this state - 
-ca--stle
-ca---ble
-ca-pitol
-c-ripple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 62
-String upto this state including this state - 
-ca--stle
-ca---ble
-capi-tol
-c-ripple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 58
-String upto this state including this state - 
-ca--stle
-ca---ble
-capitol-
-c-ripple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 56
-String upto this state including this state - 
-ca-st-le
-ca---ble
-capitol-
-c-ripple
-
-Goal reached
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
+Starting index of each string - 3212
+Cost to come to this state from the previous state - 12
 Total cost                                         - 52
 String upto this state including this state - 
-ca-stle
-ca--ble
-capitol
-cripple
+--cas
+as---
+-s---
+as---
 
+Goal reached
+
+
+Starting index of each string - 3212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 52
+String upto this state including this state - 
+--cas
+as---
+-s---
+as---
+Stack size is 28
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 6
+Total cost                                         - 16
+String upto this state including this state - 
+-c
+as
+-s
+as
+
+Adding to stack the states - 2212 1212 Stack size is 28
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 28
+String upto this state including this state - 
+-ca
+as-
+-s-
+as-
+
+Adding to stack the states - 3212 2212 Stack size is 28
+
+
+Starting index of each string - 3212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 40
+String upto this state including this state - 
+-cas
+as--
+-s--
+as--
+
+Goal reached
+
+
+Starting index of each string - 3212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 40
+String upto this state including this state - 
+-cas
+as--
+-s--
+as--
+Stack size is 27
+
+
+Starting index of each string - 0112
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+--
+a-
+-s
+as
+
+Adding to stack the states - 1212 1112 0212 0112 Stack size is 29
+
+
+Starting index of each string - 0212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+---
+a-s
+-s-
+as-
+
+Adding to stack the states - Stack size is 28
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+--c
+a--
+-s-
+as-
+
+Adding to stack the states - Stack size is 27
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+--c
+a-s
+-s-
+as-
+
+Adding to stack the states - Stack size is 26
+
+
+Starting index of each string - 0202
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+--
+as
+--
+as
+
+Adding to stack the states - 1212 1202 0212 0202 Stack size is 28
+
+
+Starting index of each string - 0212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+---
+as-
+--s
+as-
+
+Adding to stack the states - Stack size is 27
+
+
+Starting index of each string - 1202
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+--c
+as-
+---
+as-
+
+Adding to stack the states - Stack size is 26
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+--c
+as-
+--s
+as-
+
+Adding to stack the states - Stack size is 25
+
+
+Starting index of each string - 0211
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+--
+as
+-s
+a-
+
+Adding to stack the states - 1212 1211 0212 0211 Stack size is 27
+
+
+Starting index of each string - 0212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+---
+as-
+-s-
+a-s
+
+Adding to stack the states - Stack size is 26
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+--c
+as-
+-s-
+a--
+
+Adding to stack the states - Stack size is 25
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+--c
+as-
+-s-
+a-s
+
+Adding to stack the states - Stack size is 24
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+-c
+a-
+-s
+as
+
+Adding to stack the states - 2212 2112 1212 1112 Stack size is 26
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+-c-
+a-s
+-s-
+as-
+
+Adding to stack the states - Stack size is 25
+
+
+Starting index of each string - 2112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+-ca
+a--
+-s-
+as-
+
+Adding to stack the states - Stack size is 24
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+-ca
+a-s
+-s-
+as-
+
+Adding to stack the states - Stack size is 23
+
+
+Starting index of each string - 1202
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+-c
+as
+--
+as
+
+Adding to stack the states - 2212 2202 1212 1202 Stack size is 25
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+-c-
+as-
+--s
+as-
+
+Adding to stack the states - Stack size is 24
+
+
+Starting index of each string - 2202
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+-ca
+as-
+---
+as-
+
+Adding to stack the states - Stack size is 23
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+-ca
+as-
+--s
+as-
+
+Adding to stack the states - Stack size is 22
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+-c
+as
+-s
+a-
+
+Adding to stack the states - 2212 2211 1212 1211 Stack size is 24
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+-c-
+as-
+-s-
+a-s
+
+Adding to stack the states - Stack size is 23
+
+
+Starting index of each string - 2211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+-ca
+as-
+-s-
+a--
+
+Adding to stack the states - Stack size is 22
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+-ca
+as-
+-s-
+a-s
+
+Adding to stack the states - Stack size is 21
+
+
+Starting index of each string - 0102
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+--
+a-
+--
+as
+
+Adding to stack the states - 1212 1202 1112 1102 0212 0202 0112 0102 Stack size is 27
+
+
+Starting index of each string - 0212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+---
+a-s
+--s
+as-
+
+Adding to stack the states - Stack size is 26
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+--c
+a-s
+--s
+as-
+
+Adding to stack the states - Stack size is 25
+
+
+Starting index of each string - 0112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+---
+a--
+--s
+as-
+
+Adding to stack the states - Stack size is 24
+
+
+Starting index of each string - 0202
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+---
+a-s
+---
+as-
+
+Adding to stack the states - Stack size is 23
+
+
+Starting index of each string - 1102
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+--c
+a--
+---
+as-
+
+Adding to stack the states - Stack size is 22
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+--c
+a--
+--s
+as-
+
+Adding to stack the states - Stack size is 21
+
+
+Starting index of each string - 1202
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+--c
+a-s
+---
+as-
+
+Adding to stack the states - Stack size is 20
+
+
+Starting index of each string - 0111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+--
+a-
+-s
+a-
+
+Adding to stack the states - 1212 1211 1112 1111 0212 0211 0112 0111 Stack size is 26
+
+
+Starting index of each string - 0212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+---
+a-s
+-s-
+a-s
+
+Adding to stack the states - Stack size is 25
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+--c
+a-s
+-s-
+a-s
+
+Adding to stack the states - Stack size is 24
+
+
+Starting index of each string - 0112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+---
+a--
+-s-
+a-s
+
+Adding to stack the states - Stack size is 23
+
+
+Starting index of each string - 0211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+---
+a-s
+-s-
+a--
+
+Adding to stack the states - Stack size is 22
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+--c
+a--
+-s-
+a--
+
+Adding to stack the states - Stack size is 21
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+--c
+a--
+-s-
+a-s
+
+Adding to stack the states - Stack size is 20
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+--c
+a-s
+-s-
+a--
+
+Adding to stack the states - Stack size is 19
+
+
+Starting index of each string - 0201
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+--
+as
+--
+a-
+
+Adding to stack the states - 1212 1211 1202 1201 0212 0211 0202 0201 Stack size is 25
+
+
+Starting index of each string - 0212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+---
+as-
+--s
+a-s
+
+Adding to stack the states - Stack size is 24
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+--c
+as-
+--s
+a-s
+
+Adding to stack the states - Stack size is 23
+
+
+Starting index of each string - 0202
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+---
+as-
+---
+a-s
+
+Adding to stack the states - Stack size is 22
+
+
+Starting index of each string - 0211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+---
+as-
+--s
+a--
+
+Adding to stack the states - Stack size is 21
+
+
+Starting index of each string - 1201
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+--c
+as-
+---
+a--
+
+Adding to stack the states - Stack size is 20
+
+
+Starting index of each string - 1202
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+--c
+as-
+---
+a-s
+
+Adding to stack the states - Stack size is 19
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+--c
+as-
+--s
+a--
+
+Adding to stack the states - Stack size is 18
+
+
+Starting index of each string - 1101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+-c
+a-
+--
+a-
+
+Adding to stack the states - 2212 2211 2202 2201 2112 2111 2102 2101 1212 1211 1202 1201 1112 1111 1102 1101 Stack size is 32
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 6
+Total cost                                         - 28
+String upto this state including this state - 
+-c-
+a-s
+--s
+a-s
+
+Adding to stack the states - Stack size is 31
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 6
+Total cost                                         - 28
+String upto this state including this state - 
+-ca
+a-s
+--s
+a-s
+
+Adding to stack the states - Stack size is 30
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+-c-
+a--
+--s
+a-s
+
+Adding to stack the states - Stack size is 29
+
+
+Starting index of each string - 1202
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+-c-
+a-s
+---
+a-s
+
+Adding to stack the states - Stack size is 28
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+-c-
+a-s
+--s
+a--
+
+Adding to stack the states - Stack size is 27
+
+
+Starting index of each string - 2112
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+-ca
+a--
+--s
+a-s
+
+Adding to stack the states - Stack size is 26
+
+
+Starting index of each string - 2202
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+-ca
+a-s
+---
+a-s
+
+Adding to stack the states - Stack size is 25
+
+
+Starting index of each string - 2211
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+-ca
+a-s
+--s
+a--
+
+Adding to stack the states - Stack size is 24
+
+
+Starting index of each string - 1102
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+-c-
+a--
+---
+a-s
+
+Adding to stack the states - Stack size is 23
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+-c-
+a--
+--s
+a--
+
+Adding to stack the states - Stack size is 22
+
+
+Starting index of each string - 1201
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+-c-
+a-s
+---
+a--
+
+Adding to stack the states - Stack size is 21
+
+
+Starting index of each string - 2101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 34
+String upto this state including this state - 
+-ca
+a--
+---
+a--
+
+Adding to stack the states - 3212 Stack size is 21
+
+
+Starting index of each string - 3212
+Cost to come to this state from the previous state - 0
+Total cost                                         - 34
+String upto this state including this state - 
+-cas
+a--s
+---s
+a--s
+
+Goal reached
+
+
+Starting index of each string - 3212
+Cost to come to this state from the previous state - 0
+Total cost                                         - 34
+String upto this state including this state - 
+-cas
+a--s
+---s
+a--s
+Stack size is 20
+Stack size is 19
+Stack size is 18
+Stack size is 17
+
+
+Starting index of each string - 1102
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+-c
+a-
+--
+as
+
+Adding to stack the states - 2212 1212 Stack size is 17
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+-ca
+a-s
+--s
+as-
+
+Adding to stack the states - Stack size is 16
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+-c
+a-
+-s
+a-
+
+Adding to stack the states - 2212 1212 Stack size is 16
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+-ca
+a-s
+-s-
+a-s
+
+Adding to stack the states - Stack size is 15
+
+
+Starting index of each string - 1201
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+-c
+as
+--
+a-
+
+Adding to stack the states - 2212 1212 Stack size is 15
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+-ca
+as-
+--s
+a-s
+
+Adding to stack the states - Stack size is 14
+
+
+Starting index of each string - 0111
+Cost to come to this state from the previous state - 10
+Total cost                                         - 10
+String upto this state including this state - 
+-
+a
+s
+a
+
+Adding to stack the states - 1212 1211 1112 1111 0212 0211 0112 0111 Stack size is 20
+
+
+Starting index of each string - 0212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+--
+as
+s-
+as
+
+Adding to stack the states - 1212 0212 Stack size is 20
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+--c
+as-
+s--
+as-
+
+Adding to stack the states - Stack size is 19
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+-c
+as
+s-
+as
+
+Adding to stack the states - 2212 1212 Stack size is 19
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 32
+String upto this state including this state - 
+-ca
+as-
+s--
+as-
+
+Adding to stack the states - Stack size is 18
+
+
+Starting index of each string - 0112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+--
+a-
+s-
+as
+
+Adding to stack the states - Stack size is 17
+
+
+Starting index of each string - 0211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+--
+as
+s-
+a-
+
+Adding to stack the states - Stack size is 16
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+-c
+a-
+s-
+a-
+
+Adding to stack the states - 2212 1212 Stack size is 16
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 32
+String upto this state including this state - 
+-ca
+a-s
+s--
+a-s
+
+Adding to stack the states - Stack size is 15
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+-c
+a-
+s-
+as
+
+Adding to stack the states - Stack size is 14
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+-c
+as
+s-
+a-
+
+Adding to stack the states - Stack size is 13
+
+
+Starting index of each string - 1101
+Cost to come to this state from the previous state - 10
+Total cost                                         - 10
+String upto this state including this state - 
+c
+a
+-
+a
+
+Adding to stack the states - 2212 2211 2202 2201 2112 2111 2102 2101 1212 1211 1202 1201 1112 1111 1102 1101 Stack size is 27
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 6
+Total cost                                         - 16
+String upto this state including this state - 
+c-
+as
+-s
+as
+
+Adding to stack the states - 2212 1212 Stack size is 27
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 28
+String upto this state including this state - 
+c-a
+as-
+-s-
+as-
+
+Adding to stack the states - Stack size is 26
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 6
+Total cost                                         - 16
+String upto this state including this state - 
+ca
+as
+-s
+as
+
+Adding to stack the states - 3212 2212 Stack size is 26
+
+
+Starting index of each string - 3212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 28
+String upto this state including this state - 
+cas
+as-
+-s-
+as-
+
+Goal reached
+
+
+Starting index of each string - 3212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 28
+String upto this state including this state - 
+cas
+as-
+-s-
+as-
+Stack size is 25
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+c-
+a-
+-s
+as
+
+Adding to stack the states - Stack size is 24
+
+
+Starting index of each string - 1202
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+c-
+as
+--
+as
+
+Adding to stack the states - Stack size is 23
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+c-
+as
+-s
+a-
+
+Adding to stack the states - Stack size is 22
+
+
+Starting index of each string - 2112
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+ca
+a-
+-s
+as
+
+Adding to stack the states - Stack size is 21
+
+
+Starting index of each string - 2202
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+ca
+as
+--
+as
+
+Adding to stack the states - Stack size is 20
+
+
+Starting index of each string - 2211
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+ca
+as
+-s
+a-
+
+Adding to stack the states - Stack size is 19
+
+
+Starting index of each string - 1102
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+c-
+a-
+--
+as
+
+Adding to stack the states - Stack size is 18
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+c-
+a-
+-s
+a-
+
+Adding to stack the states - Stack size is 17
+
+
+Starting index of each string - 1201
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+c-
+as
+--
+a-
+
+Adding to stack the states - Stack size is 16
+
+
+Starting index of each string - 2101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 22
+String upto this state including this state - 
+ca
+a-
+--
+a-
+
+Adding to stack the states - 3212 Stack size is 16
+
+
+Starting index of each string - 3212
+Cost to come to this state from the previous state - 0
+Total cost                                         - 22
+String upto this state including this state - 
+cas
+a-s
+--s
+a-s
+
+Goal reached
+
+
+Starting index of each string - 3212
+Cost to come to this state from the previous state - 0
+Total cost                                         - 22
+String upto this state including this state - 
+cas
+a-s
+--s
+a-s
+Stack size is 15
+Stack size is 14
+Stack size is 13
+Stack size is 12
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 10
+Total cost                                         - 10
+String upto this state including this state - 
+c
+a
+s
+a
+
+Adding to stack the states - 2212 1212 Stack size is 12
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 20
+String upto this state including this state - 
+ca
+as
+s-
+as
+
+Adding to stack the states - Stack size is 11
+
+
+Starting index of each string - 0001
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+String upto this state including this state - 
+-
+-
+-
+a
+
+Adding to stack the states - Stack size is 10
+
+
+Starting index of each string - 0010
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+String upto this state including this state - 
+-
+-
+s
+-
+
+Adding to stack the states - Stack size is 9
+
+
+Starting index of each string - 0011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+String upto this state including this state - 
+-
+-
+s
+a
+
+Adding to stack the states - Stack size is 8
+
+
+Starting index of each string - 0100
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+String upto this state including this state - 
+-
+a
+-
+-
+
+Adding to stack the states - Stack size is 7
+
+
+Starting index of each string - 0110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+String upto this state including this state - 
+-
+a
+s
+-
+
+Adding to stack the states - Stack size is 6
+
+
+Starting index of each string - 1000
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+String upto this state including this state - 
+c
+-
+-
+-
+
+Adding to stack the states - 2111 2101 Stack size is 6
+
+
+Starting index of each string - 2111
+Cost to come to this state from the previous state - 6
+Total cost                                         - 18
+String upto this state including this state - 
+ca
+-a
+-s
+-a
+
+Adding to stack the states - Stack size is 5
+
+
+Starting index of each string - 1001
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+String upto this state including this state - 
+c
+-
+-
+a
+
+Adding to stack the states - 2112 Stack size is 5
+
+
+Starting index of each string - 2112
+Cost to come to this state from the previous state - 8
+Total cost                                         - 20
+String upto this state including this state - 
+ca
+-a
+-s
+as
+
+Adding to stack the states - Stack size is 4
+
+
+Starting index of each string - 1010
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+String upto this state including this state - 
+c
+-
+s
+-
+
+Adding to stack the states - 2111 Stack size is 4
+
+
+Starting index of each string - 2111
+Cost to come to this state from the previous state - 6
+Total cost                                         - 18
+String upto this state including this state - 
+ca
+-a
+s-
+-a
+
+Adding to stack the states - Stack size is 3
+
+
+Starting index of each string - 1011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+String upto this state including this state - 
+c
+-
+s
+a
+
+Adding to stack the states - Stack size is 2
+
+
+Starting index of each string - 1100
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+String upto this state including this state - 
+c
+a
+-
+-
+
+Adding to stack the states - 2211 Stack size is 2
+
+
+Starting index of each string - 2211
+Cost to come to this state from the previous state - 8
+Total cost                                         - 20
+String upto this state including this state - 
+ca
+as
+-s
+-a
+
+Adding to stack the states - Stack size is 1
+
+
+Starting index of each string - 1110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+String upto this state including this state - 
+c
+a
+s
+-
+
+Adding to stack the states - 
 
 
 
@@ -406,16 +1547,16 @@ And the winner is -
 
 
 
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 52
+Starting index of each string - 3212
+Cost to come to this state from the previous state - 0
+Total cost                                         - 22
 String upto this state including this state - 
-ca-stle
-ca--ble
-capitol
-cripple
+cas
+a-s
+--s
+a-s
 
 
-Time taken is - 43.95
-States processed - 224162
-States encountered - 3004595
+Time taken is - 0
+States processed - 121
+States encountered - 127

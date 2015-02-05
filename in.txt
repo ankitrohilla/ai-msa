@@ -2,10 +2,10 @@
 11
 c, a, s, t, l, e, b, p, i, o, r
 4
-balcopp
-cable
-capitol
-cripple
+cas
+as
+s
+as
 3
 0 2 2 2 2 2 2 2 2 2 2 1
 2 0 2 2 2 2 2 2 2 2 2 1

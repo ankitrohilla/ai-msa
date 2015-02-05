@@ -1,4 +1,4 @@
-#include <iostream>
+    #include <iostream>
 #include <vector>
 #include <queue>
 #include <stack>
@@ -154,8 +154,11 @@ public:
             tempState = new state(tempInts, this->startingIndex, this->stringsSoFar, this->costSoFar);
 
 //            if the new state can be better than the solution obtained yet, use it
-            if( tempState->costSoFar < minCost )
+            if( tempState->costSoFar < minCost ) {
+                for_each( tempState->startingIndex.begin(), tempState->startingIndex.end(), [](int i) {cout<<i;} );
+                cout << " ";
                 tempStates.push_back(*tempState);
+            }
             else
                 delete tempState;
 
@@ -178,6 +181,7 @@ public:
 //    will return a vector of all next states
     vector<state> exploreStates() {
         tempStates.clear();
+        cout << "\nAdding to stack the states - ";
         getState( 0 );
 
 //        to remove the last entry which indicates inserting hyphens for each string which is completely useless
@@ -309,7 +313,7 @@ main() {
 //    do it till the pendingStates is not empty
     do {
 
-//        cout << "Stack size is " << pendingStates.size() << endl;
+        cout << "Stack size is " << pendingStates.size() << endl;
         currentState = pendingStates.top();
         pendingStates.pop();
 
@@ -320,7 +324,7 @@ main() {
         if( currentState.costSoFar >= minCost )
             goto afterProcess;
 
-//        currentState.viewStateInfo();
+        currentState.viewStateInfo();
 
         if( !currentState.isGoal() ) {
             vector<state> temp = currentState.exploreStates();
@@ -334,7 +338,6 @@ main() {
                   });
 
             if( temp.size() > 1 && temp.back().costIncurred == 0 ) {
-                cout << "ZERO cost found\n";
                 pendingStates.push(temp.back());
                 temp.clear();
             } else {
