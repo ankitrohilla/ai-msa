@@ -382,7 +382,7 @@ a
 -
 
 minCost - 15
-Adding to stack the states - 121 120(ignored[15]) 111(ignored[15]) 110(ignored[16]) 021 020(ignored[16]) 011(ignored[16]) 010(ignored[17]) Stack size is 3
+Adding to stack the states - 121 120(ignored[15]) 111(ignored[15]) 110(ignored[16]) 021 020(ignored[16]) 011(ignored[16]) 010(ignored[17]) Stack size is 2
 
 
 Starting index of each string - 121
@@ -394,19 +394,7 @@ as
 -s
 
 minCost - 15
-Adding to stack the states - 221(ignored[20]) 121(ignored[21]) Stack size is 2
-
-
-Starting index of each string - 021
-Cost to come to this state from the previous state - 5
-Total cost                                         - 13
-String upto this state including this state - 
---
-as
--s
-
-minCost - 15
-Adding to stack the states - 121(ignored[21]) 021(ignored[22]) Stack size is 1
+Adding to stack the states - 221(ignored[20]) 121(ignored[21]) Stack size is 1
 
 
 Starting index of each string - 100
@@ -418,7 +406,7 @@ c
 -
 
 minCost - 15
-Adding to stack the states - 211 210 201(ignored[15]) 200(ignored[16]) 111(ignored[15]) 110(ignored[16]) 101(ignored[16]) 100(ignored[17]) Stack size is 2
+Adding to stack the states - 211 210 201(ignored[15]) 200(ignored[16]) 111(ignored[15]) 110(ignored[16]) 101(ignored[16]) 100(ignored[17]) Stack size is 1
 
 
 Starting index of each string - 211
@@ -430,40 +418,7 @@ ca
 -s
 
 minCost - 15
-Adding to stack the states - 321(ignored[17]) 311(ignored[20]) 221(ignored[20]) 211(ignored[21]) Stack size is 1
-
-
-Starting index of each string - 210
-Cost to come to this state from the previous state - 5
-Total cost                                         - 13
-String upto this state including this state - 
-ca
--a
---
-
-minCost - 15
-Adding to stack the states - 321 320(ignored[18]) 311(ignored[18]) 310(ignored[21]) 221(ignored[18]) 220(ignored[21]) 211(ignored[21]) 210(ignored[22]) Stack size is 1
-
-
-Starting index of each string - 321
-Cost to come to this state from the previous state - 0
-Total cost                                         - 13
-String upto this state including this state - 
-cas
--as
---s
-
-Goal reached
-
-
-Starting index of each string - 321
-Cost to come to this state from the previous state - 0
-Total cost                                         - 13
-String upto this state including this state - 
-cas
--as
---s
-
+Adding to stack the states - 321(ignored[17]) 311(ignored[20]) 221(ignored[20]) 211(ignored[21]) 
 
 
 
@@ -475,13 +430,13 @@ And the winner is -
 
 Starting index of each string - 321
 Cost to come to this state from the previous state - 0
-Total cost                                         - 13
+Total cost                                         - 15
 String upto this state including this state - 
 cas
--as
+a-s
 --s
 
 
-Time taken is - 0.003829
-States processed - 33
-States encountered - 33
+Time taken is - 0.003684
+States processed - 30
+States encountered - 30

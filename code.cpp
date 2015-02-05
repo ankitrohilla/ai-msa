@@ -1,4 +1,4 @@
-    #include <iostream>
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <stack>
@@ -75,6 +75,9 @@ public:
 //    vector of strings so far encountered upto this state including hyphen
     vector<string> stringsSoFar;
 
+//    number of hyphens added in this state
+    int hyphens = 0;
+
     int findCost() {
 
         vector<int> s(currentConcern);
@@ -102,8 +105,8 @@ public:
     state( vector<int> startingIndex, vector<int> previousStartingIndex, vector<string> previousStringsSoFar, int previousCostSoFar ) {
 
         c++;
-        if( !(c % 1000000) )
-            cout << "Constructed " << c << endl;
+//        if( !(c % 1000000) )
+//            cout << "Constructed " << c << endl;
         this->startingIndex = startingIndex;
 
         this->costIncurred = 0;
@@ -118,6 +121,7 @@ public:
                 temp.push_back( '-' );
                 currentConcern.push_back( vocabNumber );
                 costIncurred += CC;
+                hyphens++;
             }
 
             stringsSoFar.push_back( temp );
@@ -131,8 +135,8 @@ public:
 
     ~state() {
         d++;
-        if( !(d % 1000000) )
-            cout << "Destructed  " << d << endl;
+//        if( !(d % 1000000) )
+//            cout << "Destructed  " << d << endl;
         this->currentConcern.clear();
         this->previousCostInput.clear();
         this->startingIndex.clear();
@@ -155,13 +159,15 @@ public:
 
 //            if the new state can be better than the solution obtained yet, use it
             if( tempState->costSoFar < minCost ) {
-                for_each( tempState->startingIndex.begin(), tempState->startingIndex.end(), [](int i) {cout<<i;} );
-                cout << " ";
+//                for_each( tempState->startingIndex.begin(), tempState->startingIndex.end(), [](int i) {cout<<i;} );
+//                cout << " ";
                 tempStates.push_back(*tempState);
             }
-            else
+            else {
+//                for_each( tempState->startingIndex.begin(), tempState->startingIndex.end(), [](int i) {cout<<i;} );
+//                cout << "(ignored[" << tempState->costSoFar << "]) ";
                 delete tempState;
-
+            }
             return;
         }
 //        i is not referring to the last element
@@ -181,11 +187,13 @@ public:
 //    will return a vector of all next states
     vector<state> exploreStates() {
         tempStates.clear();
-        cout << "\nAdding to stack the states - ";
+//        cout << "\nminCost - " << minCost;
+//        cout << "\nAdding to stack the states - ";
         getState( 0 );
 
 //        to remove the last entry which indicates inserting hyphens for each string which is completely useless
-        if( tempStates.size()>1 )
+//        remove the last entry only if the number of hyphens there are equal to number of strings
+        if( tempStates.size()>1 && tempStates.back().hyphens == stringNumber )
             tempStates.pop_back();
         return tempStates;
     }
@@ -313,18 +321,20 @@ main() {
 //    do it till the pendingStates is not empty
     do {
 
-        cout << "Stack size is " << pendingStates.size() << endl;
+//        cout << "Stack size is " << pendingStates.size() << endl;
         currentState = pendingStates.top();
         pendingStates.pop();
 
 
         statesEncountered++;
 
+//        currentState.viewStateInfo();
+
 //        goal solution so far is better than any way this state can lead
         if( currentState.costSoFar >= minCost )
             goto afterProcess;
 
-        currentState.viewStateInfo();
+//        currentState.viewStateInfo();
 
         if( !currentState.isGoal() ) {
             vector<state> temp = currentState.exploreStates();
