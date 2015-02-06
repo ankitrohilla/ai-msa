@@ -55,48 +55,113 @@ typedef vector<int>::iterator intIterator;
 typedef string::iterator stringIterator;
 typedef vector<string>::iterator vecStringIterator;
 
-// finds the LCS between the strings so far and returns the number of matches
+// finds the editDistance between the strings so far and returns the number of matches
 // apply DP here
-long matchLCS( string s1, string s2 ) {
+long editDistance( string s1, string s2, vector<int> v1, vector<int> v2 ) {
 
-//    cout << " Strings are " << s1 << " " << s2;
+//    cout << "Strings are " << s1 << " " << s2 << "\n";
 
     int rows = s1.size()+1;
     int cols = s2.size()+1;
 
     int** A = new int*[rows];
+    char** B = new char*[rows];
     for( int i = 0; i < rows; i++ ) {
         A[i] = new int[cols];
+        B[i] = new char[cols];
     }
 
 //    initialize
-    for( int i = 0; i < rows; i++ ) {
-        A[i][0] = 0;
-    }
-    for( int i = 0; i < cols; i++ ) {
-        A[0][i] = 0;
-    }
+
+    A[0][0] = 0;
+    B[0][0] = 'O';
 
     for( int i = 1; i < rows; i++ ) {
+        A[i][0] = A[i-1][0] + CC + MC[v1.at(i-1)][vocabNumber];
+        B[i][0] = '|';
+    }
+    for( int i = 1; i < cols; i++ ) {
+        A[0][i] = A[0][i-1] + CC + MC[v2.at(i-1)][vocabNumber];
+        B[0][i] = '-';
+    }
+
+//    do it
+    for( int i = 1; i < rows; i++ ) {
         for( int j = 1; j < cols; j++ ) {
-            if( s1[i-1] == s2[j-1] )
-                A[i][j] = A[i-1][j-1] + 1;
-            else if( A[i-1][j] > A[i][j-1] )
-                A[i][j] = A[i-1][j];
-            else
-                A[i][j] = A[i][j-1];
+            int choice1, choice2, choice3;
+            choice1 = A[i-1][j-1] + MC[v1[i-1]][  v2[j-1]   ]     ; // '\'
+            choice2 = A[i-1][j]   + MC[v1[i-1]][vocabNumber] + CC; // '|'
+            choice3 = A[i][j-1]   + MC[v2[j-1]][vocabNumber] + CC; // '-'
+
+//            cout << "\ni j choice1,2,3 " << i << " " << j << " " << choice1 << " " << choice2 << " " << choice3;
+
+            if( choice1 <= choice2 && choice1 <= choice3 ) {
+                A[i][j] = choice1;
+                B[i][j] = '\\';
+            } else if( choice2 <= choice1 && choice2 <= choice3 ) {
+                A[i][j] = choice2;
+                B[i][j] = '|';
+            } else {
+                A[i][j] = choice3;
+                B[i][j] = '-';
+            }
+
         }
     }
+
+//    for( int i = 0; i < rows; i++ ) {
+
+//        cout << "\n";
+//        for( int j = 0; j < cols; j++ ) {
+//            cout << A[i][j] << " ";
+//        }
+//    }
+
+//    for( int i = 0; i < rows; i++ ) {
+//        cout << "\n";
+
+//        for( int j = 0; j < cols; j++ ) {
+//            cout << B[i][j] << " ";
+//        }
+//    }
+
+    string s3, s4;
+
+    for( int i = rows-1, j = cols-1; (i > 0)||(j > 0);) {
+        if( B[i][j] == '\\' ) {
+            s3.push_back( s1[i-1] );
+            s4.push_back( s2[j-1] );
+            i--;
+            j--;
+        } else if( B[i][j] == '|' ) {
+            s3.push_back( s1[i-1] );
+            s4.push_back( '-' );
+            i--;
+        } else {
+            s3.push_back( '-' );
+            s4.push_back( s2[j-1] );
+            j--;
+        }
+    }
+
+    reverse( s3.begin(), s3.end() );
+    reverse( s4.begin(), s4.end() );
+
+//    cout << endl << s3 << endl << s4;
 
     long result = A[rows-1][cols-1];
 
     for( int i = 0; i < rows; i++ ) {
         delete [] A[i];
+        delete [] B[i];
     }
     delete [] A;
+    delete [] B;
 
     s1.clear();
     s2.clear();
+    s3.clear();
+    s4.clear();
     return result;
 
 }
@@ -253,34 +318,37 @@ public:
 
     }
 
-//    desirability of coming to this states is determined
+// desirability of coming to this states is determined
     void heuristic() {
-//        for all nC2 combination of strings, find LCS
+//        for all nC2 combination of strings, find edit distance
         for( int i = 0; i < stringNumber; i++ ) {
-
             for( int j = i+1; j < stringNumber; j++ ) {
-
                 stringIterator s1Start = strings.at(i).begin() + this->startingIndex.at(i);
                 stringIterator s2Start = strings.at(j).begin() + this->startingIndex.at(j);
                 stringIterator s1End = strings.at(i).end();
                 stringIterator s2End = strings.at(j).end();
-//                cout << "\nmatchLCS called ";fflush(stdout);
+
+                intIterator i1Start = stringInts.at(i).begin() + this->startingIndex.at(i);
+                intIterator i2Start = stringInts.at(j).begin() + this->startingIndex.at(j);
+                intIterator i1End = stringInts.at(i).end();
+                intIterator i2End = stringInts.at(j).end();
+
                 string* s1 = new string( s1Start, s1End);
                 string* s2 = new string( s2Start, s2End);
-                heuristicValue += matchLCS( *s1, *s2 );
+                vector<int> v1( i1Start, i1End);
+                vector<int> v2( i2Start, i2End);
+
+                heuristicValue -= editDistance( *s1, *s2, v1, v2 );
+
                 delete s1;
                 delete s2;
 //                cout << heuristicValue;
-//                cout << "\nmatchLCS exited";fflush(stdout);
-
             }
         }
 
-//        penalty for increasing total length of string
-        heuristicValue -= extraHyphens * CC * (stringNumber-1);
-
-        heuristicValue = heuristicValue * mcAvg - costIncurred;
+        heuristicValue = heuristicValue * mcAvg + costIncurred;
     }
+
 
 //    will return a vector of all next states
     vector<state> exploreStates() {
@@ -397,8 +465,6 @@ main() {
 
     for_each( isMaxLength.begin(), isMaxLength.end(), [](bool b){cout<<b;});
 
-
-
 //    compute average of MC's component
     long mcSum = 0;
     for( int i = 0; i < vocabNumber; i++ ) {
@@ -412,6 +478,7 @@ main() {
     cout << "\nInput strings\n";
     for_each(strings.begin(), strings.end(), [](string s){cout<<s<<endl;});
 
+    cout << "\nCC " << CC;
     cout << "\nMC\n";
     for_each(MC.begin(), MC.end(), [](vector<int> v){
         for_each(v.begin(), v.end(), [](int i){cout<<i;});
@@ -447,27 +514,20 @@ main() {
 //    this vector comprising of one character from each stringInts will be fed to findCost()
     vector<int> costInput;
 
-
-
-
-
 //    STARTING AI
     pendingStates.push( currentState );
 
 
 //    DFS WORKED A BIT BETTER THAN BFS BECAUSE ONE GOAL IS REACHED INSTANTLY
-
 //    do it till the pendingStates is not empty
     do {
-
 //        cout << "Stack size is " << pendingStates.size() << endl;
+
         currentState = pendingStates.top();
         pendingStates.pop();
-
         statesEncountered++;
 
 //        currentState.viewStateInfo();
-
 //        goal solution so far is better than any way this state can lead
         if( currentState.costSoFar >= minCost )
             goto afterProcess;
@@ -477,39 +537,34 @@ main() {
 
         if( !currentState.isGoal() ) {
             vector<state> temp = currentState.exploreStates();
-
             if( temp.size() > 1 && temp.back().costIncurred == 0 ) {
                 pendingStates.push(temp.back());
                 temp.clear();
             } else {
-                for_each( temp.begin(), temp.end(), [&](state s){
-                    pendingStates.push(s);
+            for_each( temp.begin(), temp.end(), [&](state s){
+                pendingStates.push(s);
                 } );
             }
         } else {
             if( currentState.costSoFar < minCost ) {
-                minCost = currentState.costSoFar;
-                minState = currentState;
-                cout << "\nGoal reached\n";
-                currentState.viewStateInfo();
+            minCost = currentState.costSoFar;
+            minState = currentState;
+            cout << "\nGoal reached\n";
+            currentState.viewStateInfo();
             }
         }
         statesProcessed++;
-
         afterProcess:;
-
     } while( !pendingStates.empty() );
 
     cout << "\n\n\n\n\n\nAnd the winner is - \n\n";
-
     minState.viewStateInfo();
-
     time_t end = clock();
 
     cout << "\n\nTime taken is - " << float(end - beg)/CLOCKS_PER_SEC;
     cout << "\nStates processed - " << statesProcessed;
     cout << "\nStates encountered - " << statesEncountered;
-
     cout << endl;
+
     return 0;
 }
