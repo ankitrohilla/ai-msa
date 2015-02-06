@@ -1,10 +1,12 @@
 5.5
 11
 c, a, s, t, l, e, b, p, i, o, r
-3
-cas
-as
-s
+5
+castle
+capitol
+cripple
+cable
+rebel
 3
 0 2 2 2 2 2 2 2 2 2 2 1
 2 0 2 2 2 2 2 2 2 2 2 1
@@ -20,12 +22,13 @@ s
 1 1 1 1 1 1 1 1 1 1 1 0
 
 
-A CTGTGA
-T ACTGC
-A CTGA
-
-ACTGTGA
-TAC-TGC
-AC--TGA
-
-
+Starting index of each string - 4553
+Cost to come to this state from the previous state - 6
+Total cost                                         - 46
+Depth - 5
+Heuristic of this state - -6
+String upto this state including this state -
+-stle
+pitol
+ipple
+--ble

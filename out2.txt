@@ -1,9 +1,9 @@
-
+5
 Input strings
-castle
-cable
-capitol
-cripple
+tlel
+itol
+ipple
+blele
 
 MC
 022222222221
@@ -18,36 +18,10 @@ MC
 222222222021
 222222222201
 111111111110
+MCsum and MCavg are - 110 2
 
 stringInts
-012345
-01645
-0178394
-01087745
-Destructed  1000000
-Constructed 1000000
-Destructed  2000000
-Destructed  3000000
-
-
-
-
-
-
-And the winner is - 
-
-
-
-Starting index of each string - 6577
-Cost to come to this state from the previous state - 6
-Total cost                                         - 52
-String upto this state including this state - 
-ca-stle
-ca--ble
-capitol
-cripple
-
-
-Time taken is - 9.88436
-States processed - 140311
-States encountered - 140417
+3454
+8394
+87745
+64545

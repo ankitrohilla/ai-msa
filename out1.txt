@@ -1,119 +1,2932 @@
 
 Input strings
-ACTGCAGT
-CTATGA
-ATCAGTG
-ATGTCGA
-CACTAG
-CATTGCA
+stlel
+pitol
+ipple
+blele
 
 MC
-01111
-10121
-11012
-12101
-11210
+022222222221
+202222222221
+220222222221
+222022222221
+222202222221
+222220222221
+222222022221
+222222202221
+222222220221
+222222222021
+222222222201
+111111111110
+MCsum and MCavg are - 110 2
 
 stringInts
-01231032
-120230
-0210323
-0232130
-101203
-1022310
-Destructed  1000000
-Constructed 1000000
-Destructed  2000000
-ZERO cost found
-ZERO cost found
-Destructed  3000000
-Constructed 2000000
-ZERO cost found
-Destructed  4000000
-ZERO cost found
-ZERO cost found
-Constructed 3000000
-Destructed  5000000
-Destructed  6000000
-ZERO cost found
-ZERO cost found
-Constructed 4000000
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-Destructed  7000000
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-Constructed 5000000
-ZERO cost found
-ZERO cost found
-ZERO cost found
-Destructed  8000000
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-Destructed  9000000
-Constructed 6000000
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-Destructed  10000000
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-Constructed 7000000
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-ZERO cost found
-Destructed  11000000
+23454
+78394
+87745
+64545
+
+
+Starting index of each string - 0001
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 12
+String upto this state including this state - 
+-
+-
+-
+b
+
+
+Starting index of each string - 0011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+--
+--
+-i
+b-
+
+
+Starting index of each string - 0101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+--
+-p
+--
+b-
+
+
+Starting index of each string - 1001
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+--
+--
+b-
+
+
+Starting index of each string - 1011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+--
+-i
+b-
+
+
+Starting index of each string - 1101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+-p
+--
+b-
+
+
+Starting index of each string - 0002
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+--
+--
+bl
+
+
+Starting index of each string - 0012
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+--
+-i
+bl
+
+
+Starting index of each string - 0102
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+-p
+--
+bl
+
+
+Starting index of each string - 0111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+-p
+-i
+b-
+
+
+Starting index of each string - 1002
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+--
+--
+bl
+
+
+Starting index of each string - 1012
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+--
+-i
+bl
+
+
+Starting index of each string - 1102
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+-p
+--
+bl
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+-p
+-i
+b-
+
+
+Starting index of each string - 0112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+--
+-p
+-i
+bl
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+-s
+-p
+-i
+bl
+
+
+Starting index of each string - 0010
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 12
+String upto this state including this state - 
+-
+-
+i
+-
+
+
+Starting index of each string - 0011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+--
+--
+i-
+-b
+
+
+Starting index of each string - 0020
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+--
+--
+ip
+--
+
+
+Starting index of each string - 0021
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+--
+--
+ip
+-b
+
+
+Starting index of each string - 0120
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+--
+-p
+ip
+--
+
+
+Starting index of each string - 0121
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+--
+-p
+ip
+-b
+
+
+Starting index of each string - 1010
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+--
+i-
+--
+
+
+Starting index of each string - 1011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+--
+i-
+-b
+
+
+Starting index of each string - 1020
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+--
+ip
+--
+
+
+Starting index of each string - 1021
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+--
+ip
+-b
+
+
+Starting index of each string - 1120
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+-p
+ip
+--
+
+
+Starting index of each string - 1121
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+-p
+ip
+-b
+
+
+Starting index of each string - 0110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+-p
+i-
+--
+
+
+Starting index of each string - 0111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+-p
+i-
+-b
+
+
+Starting index of each string - 1110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+-p
+i-
+--
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+-p
+i-
+-b
+
+
+Starting index of each string - 0011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 12
+String upto this state including this state - 
+-
+-
+i
+b
+
+
+Starting index of each string - 0021
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+--
+--
+ip
+b-
+
+
+Starting index of each string - 0121
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+--
+-p
+ip
+b-
+
+
+Starting index of each string - 1011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+--
+i-
+b-
+
+
+Starting index of each string - 1021
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+--
+ip
+b-
+
+
+Starting index of each string - 1121
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+-p
+ip
+b-
+
+
+Starting index of each string - 0012
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+--
+i-
+bl
+
+
+Starting index of each string - 0022
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+--
+ip
+bl
+
+
+Starting index of each string - 0111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+-p
+i-
+b-
+
+
+Starting index of each string - 0122
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+-p
+ip
+bl
+
+
+Starting index of each string - 1012
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+--
+i-
+bl
+
+
+Starting index of each string - 1022
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+--
+ip
+bl
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+-p
+i-
+b-
+
+
+Starting index of each string - 1122
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+-p
+ip
+bl
+
+
+Starting index of each string - 0112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+--
+-p
+i-
+bl
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+-s
+-p
+i-
+bl
+
+
+Starting index of each string - 0100
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 12
+String upto this state including this state - 
+-
+p
+-
+-
+
+
+Starting index of each string - 0101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+--
+p-
+--
+-b
+
+
+Starting index of each string - 0210
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+--
+pi
+-i
+--
+
+
+Starting index of each string - 0211
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+--
+pi
+-i
+-b
+
+
+Starting index of each string - 1100
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+p-
+--
+--
+
+
+Starting index of each string - 1101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+p-
+--
+-b
+
+
+Starting index of each string - 1210
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+pi
+-i
+--
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+pi
+-i
+-b
+
+
+Starting index of each string - 0110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+p-
+-i
+--
+
+
+Starting index of each string - 0111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+p-
+-i
+-b
+
+
+Starting index of each string - 0200
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+pi
+--
+--
+
+
+Starting index of each string - 0201
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+pi
+--
+-b
+
+
+Starting index of each string - 1110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+p-
+-i
+--
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+p-
+-i
+-b
+
+
+Starting index of each string - 1200
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+pi
+--
+--
+
+
+Starting index of each string - 1201
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+pi
+--
+-b
+
+
+Starting index of each string - 0101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 12
+String upto this state including this state - 
+-
+p
+-
+b
+
+
+Starting index of each string - 0211
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+--
+pi
+-i
+b-
+
+
+Starting index of each string - 1101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+p-
+--
+b-
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+-s
+pi
+-i
+b-
+
+
+Starting index of each string - 0102
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+p-
+--
+bl
+
+
+Starting index of each string - 0111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+p-
+-i
+b-
+
+
+Starting index of each string - 0201
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+pi
+--
+b-
+
+
+Starting index of each string - 0212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+pi
+-i
+bl
+
+
+Starting index of each string - 1102
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+p-
+--
+bl
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+p-
+-i
+b-
+
+
+Starting index of each string - 1201
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+pi
+--
+b-
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+pi
+-i
+bl
+
+
+Starting index of each string - 0112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+--
+p-
+-i
+bl
+
+
+Starting index of each string - 0202
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+--
+pi
+--
+bl
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+-s
+p-
+-i
+bl
+
+
+Starting index of each string - 1202
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+-s
+pi
+--
+bl
+
+
+Starting index of each string - 1000
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 12
+String upto this state including this state - 
+s
+-
+-
+-
+
+
+Starting index of each string - 1001
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+--
+--
+-b
+
+
+Starting index of each string - 1010
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+--
+-i
+--
+
+
+Starting index of each string - 1011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+--
+-i
+-b
+
+
+Starting index of each string - 1100
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+-p
+--
+--
+
+
+Starting index of each string - 1101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+-p
+--
+-b
+
+
+Starting index of each string - 1110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+-p
+-i
+--
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+-p
+-i
+-b
+
+
+Starting index of each string - 2000
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+--
+--
+--
+
+
+Starting index of each string - 2001
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+--
+--
+-b
+
+
+Starting index of each string - 2010
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+--
+-i
+--
+
+
+Starting index of each string - 2011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+--
+-i
+-b
+
+
+Starting index of each string - 2100
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+-p
+--
+--
+
+
+Starting index of each string - 2101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+-p
+--
+-b
+
+
+Starting index of each string - 2110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+-p
+-i
+--
+
+
+Starting index of each string - 2111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+-p
+-i
+-b
+
+
+Starting index of each string - 1001
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 12
+String upto this state including this state - 
+s
+-
+-
+b
+
+
+Starting index of each string - 1011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+--
+-i
+b-
+
+
+Starting index of each string - 1101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+-p
+--
+b-
+
+
+Starting index of each string - 1002
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+--
+--
+bl
+
+
+Starting index of each string - 1012
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+--
+-i
+bl
+
+
+Starting index of each string - 1102
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+-p
+--
+bl
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+-p
+-i
+b-
+
+
+Starting index of each string - 2001
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+--
+--
+b-
+
+
+Starting index of each string - 2011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+--
+-i
+b-
+
+
+Starting index of each string - 2101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+-p
+--
+b-
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+s-
+-p
+-i
+bl
+
+
+Starting index of each string - 2002
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+--
+--
+bl
+
+
+Starting index of each string - 2012
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+--
+-i
+bl
+
+
+Starting index of each string - 2102
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+-p
+--
+bl
+
+
+Starting index of each string - 2111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+-p
+-i
+b-
+
+
+Starting index of each string - 2112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 6
+String upto this state including this state - 
+st
+-p
+-i
+bl
+
+
+Starting index of each string - 1010
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 12
+String upto this state including this state - 
+s
+-
+i
+-
+
+
+Starting index of each string - 1011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+--
+i-
+-b
+
+
+Starting index of each string - 1020
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+--
+ip
+--
+
+
+Starting index of each string - 1021
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+--
+ip
+-b
+
+
+Starting index of each string - 1120
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+-p
+ip
+--
+
+
+Starting index of each string - 1121
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+-p
+ip
+-b
+
+
+Starting index of each string - 1110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+-p
+i-
+--
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+-p
+i-
+-b
+
+
+Starting index of each string - 2010
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+--
+i-
+--
+
+
+Starting index of each string - 2011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+--
+i-
+-b
+
+
+Starting index of each string - 2020
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+--
+ip
+--
+
+
+Starting index of each string - 2021
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+--
+ip
+-b
+
+
+Starting index of each string - 2120
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+-p
+ip
+--
+
+
+Starting index of each string - 2121
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+-p
+ip
+-b
+
+
+Starting index of each string - 2110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+-p
+i-
+--
+
+
+Starting index of each string - 2111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+-p
+i-
+-b
+
+
+Starting index of each string - 1011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 12
+String upto this state including this state - 
+s
+-
+i
+b
+
+
+Starting index of each string - 1021
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+--
+ip
+b-
+
+
+Starting index of each string - 1121
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+-p
+ip
+b-
+
+
+Starting index of each string - 1012
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+--
+i-
+bl
+
+
+Starting index of each string - 1022
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+--
+ip
+bl
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+-p
+i-
+b-
+
+
+Starting index of each string - 1122
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+-p
+ip
+bl
+
+
+Starting index of each string - 2011
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+--
+i-
+b-
+
+
+Starting index of each string - 2021
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+--
+ip
+b-
+
+
+Starting index of each string - 2121
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+-p
+ip
+b-
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+s-
+-p
+i-
+bl
+
+
+Starting index of each string - 2012
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+--
+i-
+bl
+
+
+Starting index of each string - 2022
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+--
+ip
+bl
+
+
+Starting index of each string - 2111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+-p
+i-
+b-
+
+
+Starting index of each string - 2122
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+-p
+ip
+bl
+
+
+Starting index of each string - 2112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 6
+String upto this state including this state - 
+st
+-p
+i-
+bl
+
+
+Starting index of each string - 1100
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 12
+String upto this state including this state - 
+s
+p
+-
+-
+
+
+Starting index of each string - 1101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+p-
+--
+-b
+
+
+Starting index of each string - 1210
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+pi
+-i
+--
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+pi
+-i
+-b
+
+
+Starting index of each string - 1110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+p-
+-i
+--
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+p-
+-i
+-b
+
+
+Starting index of each string - 1200
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+pi
+--
+--
+
+
+Starting index of each string - 1201
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+pi
+--
+-b
+
+
+Starting index of each string - 2100
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+p-
+--
+--
+
+
+Starting index of each string - 2101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+p-
+--
+-b
+
+
+Starting index of each string - 2210
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+pi
+-i
+--
+
+
+Starting index of each string - 2211
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+pi
+-i
+-b
+
+
+Starting index of each string - 2110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+p-
+-i
+--
+
+
+Starting index of each string - 2111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+p-
+-i
+-b
+
+
+Starting index of each string - 2200
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+pi
+--
+--
+
+
+Starting index of each string - 2201
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+pi
+--
+-b
+
+
+Starting index of each string - 1101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 12
+String upto this state including this state - 
+s
+p
+-
+b
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 12
+String upto this state including this state - 
+s-
+pi
+-i
+b-
+
+
+Starting index of each string - 1102
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+p-
+--
+bl
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+p-
+-i
+b-
+
+
+Starting index of each string - 1201
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+pi
+--
+b-
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+pi
+-i
+bl
+
+
+Starting index of each string - 2101
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+p-
+--
+b-
+
+
+Starting index of each string - 2211
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+st
+pi
+-i
+b-
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+s-
+p-
+-i
+bl
+
+
+Starting index of each string - 1202
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+s-
+pi
+--
+bl
+
+
+Starting index of each string - 2102
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+p-
+--
+bl
+
+
+Starting index of each string - 2111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+p-
+-i
+b-
+
+
+Starting index of each string - 2201
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+pi
+--
+b-
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 10
+Total cost                                         - 22
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+pi
+-i
+bl
+
+
+Starting index of each string - 2112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 6
+String upto this state including this state - 
+st
+p-
+-i
+bl
+
+
+Starting index of each string - 2202
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 6
+String upto this state including this state - 
+st
+pi
+--
+bl
+
+
+Starting index of each string - 0110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 10
+String upto this state including this state - 
+-
+p
+i
+-
+
+
+Starting index of each string - 0111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+p-
+i-
+-b
+
+
+Starting index of each string - 0120
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+p-
+ip
+--
+
+
+Starting index of each string - 0121
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+p-
+ip
+-b
+
+
+Starting index of each string - 0210
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+pi
+i-
+--
+
+
+Starting index of each string - 0211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+pi
+i-
+-b
+
+
+Starting index of each string - 0220
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+pi
+ip
+--
+
+
+Starting index of each string - 0221
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+pi
+ip
+-b
+
+
+Starting index of each string - 1110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+p-
+i-
+--
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+p-
+i-
+-b
+
+
+Starting index of each string - 1120
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+p-
+ip
+--
+
+
+Starting index of each string - 1121
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+p-
+ip
+-b
+
+
+Starting index of each string - 1210
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+pi
+i-
+--
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+pi
+i-
+-b
+
+
+Starting index of each string - 1220
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+pi
+ip
+--
+
+
+Starting index of each string - 1221
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+pi
+ip
+-b
+
+
+Starting index of each string - 0111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 10
+String upto this state including this state - 
+-
+p
+i
+b
+
+
+Starting index of each string - 0121
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+p-
+ip
+b-
+
+
+Starting index of each string - 0211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+pi
+i-
+b-
+
+
+Starting index of each string - 0221
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+--
+pi
+ip
+b-
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+p-
+i-
+b-
+
+
+Starting index of each string - 1121
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+p-
+ip
+b-
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+pi
+i-
+b-
+
+
+Starting index of each string - 1221
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+-s
+pi
+ip
+b-
+
+
+Starting index of each string - 0112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+--
+p-
+i-
+bl
+
+
+Starting index of each string - 0122
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+--
+p-
+ip
+bl
+
+
+Starting index of each string - 0212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+--
+pi
+i-
+bl
+
+
+Starting index of each string - 0222
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+--
+pi
+ip
+bl
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+-s
+p-
+i-
+bl
+
+
+Starting index of each string - 1122
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+-s
+p-
+ip
+bl
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+-s
+pi
+i-
+bl
+
+
+Starting index of each string - 1222
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+-s
+pi
+ip
+bl
+
+
+Starting index of each string - 1110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 10
+String upto this state including this state - 
+s
+p
+i
+-
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+p-
+i-
+-b
+
+
+Starting index of each string - 1120
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+p-
+ip
+--
+
+
+Starting index of each string - 1121
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+p-
+ip
+-b
+
+
+Starting index of each string - 1210
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+pi
+i-
+--
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+pi
+i-
+-b
+
+
+Starting index of each string - 1220
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+pi
+ip
+--
+
+
+Starting index of each string - 1221
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+pi
+ip
+-b
+
+
+Starting index of each string - 2110
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+p-
+i-
+--
+
+
+Starting index of each string - 2111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+p-
+i-
+-b
+
+
+Starting index of each string - 2120
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+p-
+ip
+--
+
+
+Starting index of each string - 2121
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+p-
+ip
+-b
+
+
+Starting index of each string - 2210
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+pi
+i-
+--
+
+
+Starting index of each string - 2211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+pi
+i-
+-b
+
+
+Starting index of each string - 2220
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+pi
+ip
+--
+
+
+Starting index of each string - 2221
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+pi
+ip
+-b
+
+
+Starting index of each string - 1111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 12
+Depth - 1
+Heuristic of this state - 10
+String upto this state including this state - 
+s
+p
+i
+b
+
+
+Starting index of each string - 1121
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+p-
+ip
+b-
+
+
+Starting index of each string - 1211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+pi
+i-
+b-
+
+
+Starting index of each string - 1221
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 10
+String upto this state including this state - 
+s-
+pi
+ip
+b-
+
+
+Starting index of each string - 1112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+s-
+p-
+i-
+bl
+
+
+Starting index of each string - 1122
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+s-
+p-
+ip
+bl
+
+
+Starting index of each string - 1212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+s-
+pi
+i-
+bl
+
+
+Starting index of each string - 1222
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+s-
+pi
+ip
+bl
+
+
+Starting index of each string - 2111
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+p-
+i-
+b-
+
+
+Starting index of each string - 2121
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+p-
+ip
+b-
+
+
+Starting index of each string - 2211
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+pi
+i-
+b-
+
+
+Starting index of each string - 2221
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 8
+String upto this state including this state - 
+st
+pi
+ip
+b-
+
+
+Starting index of each string - 2112
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 6
+String upto this state including this state - 
+st
+p-
+i-
+bl
+
+
+Starting index of each string - 2122
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 6
+String upto this state including this state - 
+st
+p-
+ip
+bl
+
+
+Starting index of each string - 2212
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 6
+String upto this state including this state - 
+st
+pi
+i-
+bl
+
+
+Starting index of each string - 2222
+Cost to come to this state from the previous state - 12
+Total cost                                         - 24
+Depth - 2
+Heuristic of this state - 6
+String upto this state including this state - 
+st
+pi
+ip
+bl
+
+
+
+
+
+
+And the winner is - 
+
+
+
+Starting index of each string - 5555
+Cost to come to this state from the previous state - 10
+Total cost                                         - 52
+Depth - 6
+Heuristic of this state - -10
+String upto this state including this state - 
+stlel-
+pitol-
+-ipple
+-blele
+
+
+Time taken is - 52.0996
+States processed - 366177
+States encountered - 366197
