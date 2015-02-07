@@ -1,33 +1,24 @@
 5.5
-11
-c, a, s, t, l, e, b, p, i, o, r
-4
-castle
-capitol
-cripple
-cable
+13
+A, C, T, G, a, s, d, f, g, h, j, k, l
+5
+sfka
+aTA
+GTsf
+CGCd
+GCCC
 3
-0 2 2 2 2 2 2 2 2 2 2 1
-2 0 2 2 2 2 2 2 2 2 2 1
-2 2 0 2 2 2 2 2 2 2 2 1
-2 2 2 0 2 2 2 2 2 2 2 1
-2 2 2 2 0 2 2 2 2 2 2 1
-2 2 2 2 2 0 2 2 2 2 2 1
-2 2 2 2 2 2 0 2 2 2 2 1
-2 2 2 2 2 2 2 0 2 2 2 1
-2 2 2 2 2 2 2 2 0 2 2 1
-2 2 2 2 2 2 2 2 2 0 2 1
-2 2 2 2 2 2 2 2 2 2 0 1
-1 1 1 1 1 1 1 1 1 1 1 0
-
-
-Starting index of each string - 4553
-Cost to come to this state from the previous state - 6
-Total cost                                         - 46
-Depth - 5
-Heuristic of this state - -6
-String upto this state including this state -
--stle
-pitol
-ipple
---ble
+0 2 2 2 2 2 2 2 2 2 2 2 2 1
+2 0 2 2 2 2 2 2 2 2 2 2 2 1
+2 2 0 2 2 2 2 2 2 2 2 2 2 1
+2 2 2 0 2 2 2 2 2 2 2 2 2 1
+2 2 2 2 0 2 2 2 2 2 2 2 2 1
+2 2 2 2 2 0 2 2 2 2 2 2 2 1
+2 2 2 2 2 2 0 2 2 2 2 2 2 1
+2 2 2 2 2 2 2 0 2 2 2 2 2 1
+2 2 2 2 2 2 2 2 0 2 2 2 2 1
+2 2 2 2 2 2 2 2 2 0 2 2 2 1
+2 2 2 2 2 2 2 2 2 2 0 2 2 1
+2 2 2 2 2 2 2 2 2 2 2 0 2 1
+2 2 2 2 2 2 2 2 2 2 2 2 0 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 0

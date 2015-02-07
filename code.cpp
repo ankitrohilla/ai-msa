@@ -16,7 +16,7 @@ float ttime;
 long c = 0 , d = 0;
 
 //name justifies
-int mcAvg = 0;
+float mcAvg = 0;
 
 //final cost
 long minCost = 9999999999;
@@ -24,6 +24,7 @@ long minCost = 9999999999;
 // for analysis
 long statesProcessed = 0;
 long statesEncountered = 0;
+long nodeSaved = 0;
 
 // number of characters
 int vocabNumber;
@@ -57,9 +58,10 @@ typedef vector<string>::iterator vecStringIterator;
 
 // finds the editDistance between the strings so far and returns the number of matches
 // apply DP here
-long editDistance( string s1, string s2, vector<int> v1, vector<int> v2 ) {
+long editDistance( string s1, string s2, vector<int> v1, vector<int> v2, int depth ) {
 
-//    cout << "Strings are " << s1 << " " << s2 << "\n";
+//    if( depth == 1 )
+//        cout << "Strings are " << s1 << " " << s2;
 
     int rows = s1.size()+1;
     int cols = s2.size()+1;
@@ -147,9 +149,10 @@ long editDistance( string s1, string s2, vector<int> v1, vector<int> v2 ) {
     reverse( s3.begin(), s3.end() );
     reverse( s4.begin(), s4.end() );
 
-//    cout << endl << s3 << endl << s4;
-
     long result = A[rows-1][cols-1];
+
+    if( depth == 1 )
+        cout << " " << result << endl;
 
     for( int i = 0; i < rows; i++ ) {
         delete [] A[i];
@@ -162,6 +165,7 @@ long editDistance( string s1, string s2, vector<int> v1, vector<int> v2 ) {
     s2.clear();
     s3.clear();
     s4.clear();
+
     return result;
 
 }
@@ -179,8 +183,11 @@ public:
 //    depth of state in the tree
     int depth = 0;
 
-//    name justifies
-    long heuristicValue = 0;
+//    when a node competes with is siblings, this parameter is used
+    float heuristicDesirability = 0.0;
+
+//    when a node is to be pruned, currently, this is the parameter to check
+    float heuristicMinCost = 0.0;
 
 //    pointer to the previous state
     state *previousState;
@@ -250,8 +257,6 @@ public:
                 temp.push_back( '-' );
                 currentConcern.push_back( vocabNumber );
                 costIncurred += CC;
-                if( isMaxLength.at(i) )
-                    extraHyphens = 1;
                 hyphens++;
             }
 
@@ -262,7 +267,14 @@ public:
 //        find cost incurred after matching
         this->costIncurred += findCost();
         this->costSoFar = costIncurred + previousCostSoFar;
+        if( depth == 1 ) {
+            viewStateInfo();
+            cout << "GONNA check heuristic\n";
+        }
         heuristic();
+        if( depth == 1 ) {
+            cout << "Heuristic returned is " << this->heuristicDesirability;
+        }
     }
 
     ~state() {
@@ -320,6 +332,9 @@ public:
 
 // desirability of coming to this states is determined
     void heuristic() {
+
+        heuristicDesirability = 0;
+
 //        for all nC2 combination of strings, find edit distance
         for( int i = 0; i < stringNumber; i++ ) {
             for( int j = i+1; j < stringNumber; j++ ) {
@@ -337,16 +352,27 @@ public:
                 string* s2 = new string( s2Start, s2End);
                 vector<int> v1( i1Start, i1End);
                 vector<int> v2( i2Start, i2End);
+                if( depth == 1 )
+                    cout << "Strings for editDistance " << *s1 << " " << *s2;
 
-                heuristicValue -= editDistance( *s1, *s2, v1, v2 );
+                float temp = editDistance( *s1, *s2, v1, v2, depth );
+                heuristicDesirability += temp;
+
+//                max edit distance returned is the heuristicMinCost
+                if( temp > heuristicMinCost )
+                    heuristicMinCost = temp;
 
                 delete s1;
                 delete s2;
-//                cout << heuristicValue;
+//                cout << heuristicDesirability;
             }
         }
 
-        heuristicValue = heuristicValue * mcAvg + costIncurred;
+//        average the heuristic found
+        heuristicDesirability /= (stringNumber * (stringNumber-1)/2.0);
+
+//        if( depth == 1 )
+//            cout << "heursitc value - " << heuristicDesirability;
     }
 
 
@@ -364,9 +390,13 @@ public:
 
 //        sort according to heuristic
         sort( tempStates.begin(), tempStates.end(), [&](state s1, state s2 ){
-//            higher the heuristic value returned, higher the desirability of the state
-//            later the state will be enstacked and sooner will be popped
-            if( s1.heuristicValue < s2.heuristicValue )
+//            higher the heuristic value returned, lower the desirability of the state
+//            sooner the state will be enstacked and later will be popped
+            if( s1.costIncurred == 0 )
+                return false;
+            else if( s2.costIncurred == 0 )
+                return true;
+            else if( s1.heuristicDesirability + s1.costIncurred > s2.heuristicDesirability + s2.costIncurred )
                 return true;
             else
                 return false;
@@ -392,7 +422,8 @@ public:
         cout << "\nCost to come to this state from the previous state - " << costIncurred;
         cout << "\nTotal cost                                         - " << costSoFar;
         cout << "\nDepth - " << depth;
-        cout << "\nHeuristic of this state - " << heuristicValue;
+        cout << "\nHeuristic desirability of this state - " << heuristicDesirability;
+        cout << "\nHeuristic min cost of this state - " << heuristicMinCost;
         cout << "\nString upto this state including this state - \n";
         for_each( stringsSoFar.begin(), stringsSoFar.end(), [](string s){cout << s << endl;} );
 
@@ -466,7 +497,7 @@ main() {
     for_each( isMaxLength.begin(), isMaxLength.end(), [](bool b){cout<<b;});
 
 //    compute average of MC's component
-    long mcSum = 0;
+    float mcSum = 0;
     for( int i = 0; i < vocabNumber; i++ ) {
         for( int j = 0; j < i; j++ ) {
             mcSum += MC[i][j];
@@ -519,9 +550,11 @@ main() {
 
 
 //    DFS WORKED A BIT BETTER THAN BFS BECAUSE ONE GOAL IS REACHED INSTANTLY
+//    NOW I AM GONNA DO A*, LETS SEE IF IT CAN DO ANY GOOD
+
 //    do it till the pendingStates is not empty
     do {
-//        cout << "Stack size is " << pendingStates.size() << endl;
+//        cout << "Stack size is " <<    pendingStates.size() << endl;
 
         currentState = pendingStates.top();
         pendingStates.pop();
@@ -529,28 +562,36 @@ main() {
 
 //        currentState.viewStateInfo();
 //        goal solution so far is better than any way this state can lead
-        if( currentState.costSoFar >= minCost )
+        if( currentState.costSoFar + currentState.heuristicMinCost >= minCost ) {
+            if( currentState.costSoFar < minCost ) {
+                nodeSaved++;
+//                cout << "Node saved by heuristic\n";
+            }
             goto afterProcess;
+        }
 
-        if( currentState.depth == 1 )
+        if( currentState.depth == 3 )
             currentState.viewStateInfo();
 
         if( !currentState.isGoal() ) {
             vector<state> temp = currentState.exploreStates();
             if( temp.size() > 1 && temp.back().costIncurred == 0 ) {
+//                cout << "\nZERO COST FOUND";
                 pendingStates.push(temp.back());
                 temp.clear();
             } else {
             for_each( temp.begin(), temp.end(), [&](state s){
+//                cout << "Adding state";
+//                s.viewStateInfo();
                 pendingStates.push(s);
                 } );
             }
         } else {
             if( currentState.costSoFar < minCost ) {
-            minCost = currentState.costSoFar;
-            minState = currentState;
-            cout << "\nGoal reached\n";
-            currentState.viewStateInfo();
+                minCost = currentState.costSoFar;
+                minState = currentState;
+                cout << "\nGoal reached\n";
+                currentState.viewStateInfo();
             }
         }
         statesProcessed++;
@@ -561,9 +602,10 @@ main() {
     minState.viewStateInfo();
     time_t end = clock();
 
-    cout << "\n\nTime taken is - " << float(end - beg)/CLOCKS_PER_SEC;
-    cout << "\nStates processed - " << statesProcessed;
-    cout << "\nStates encountered - " << statesEncountered;
+    cout << "\n\nTime taken is            - " << float(end - beg)/CLOCKS_PER_SEC;
+    cout << "\nStates processed         - " << statesProcessed;
+    cout << "\nStates encountered       - " << statesEncountered;
+    cout << "\nNodes saved by heuristic - " << nodeSaved;
     cout << endl;
 
     return 0;
