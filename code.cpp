@@ -7,19 +7,27 @@
 
 #include <ctime>
 
+#define timeTaken float(endt - begt)/CLOCKS_PER_SEC
+
 class state;
 
 using namespace std;
 
 float ttime;
 
+time_t begt, endt;
+
 long c = 0 , d = 0;
 
-//name justifies
+// name justifies
 float mcAvg = 0;
 
-//final cost
+// final cost
 long minCost = 9999999999;
+
+// they will be used by center star method where edit distance will return them as the output strings
+// purely temporary
+string s3, s4;
 
 // for analysis
 long statesProcessed = 0;
@@ -59,6 +67,9 @@ typedef vector<string>::iterator vecStringIterator;
 // finds the editDistance between the strings so far and returns the number of matches
 // apply DP here
 long editDistance( string s1, string s2, vector<int> v1, vector<int> v2, int depth ) {
+
+    s3.clear();
+    s4.clear();
 
 //    if( depth == 1 )
 //        cout << "Strings are " << s1 << " " << s2;
@@ -127,8 +138,6 @@ long editDistance( string s1, string s2, vector<int> v1, vector<int> v2, int dep
 //        }
 //    }
 
-    string s3, s4;
-
     for( int i = rows-1, j = cols-1; (i > 0)||(j > 0);) {
         if( B[i][j] == '\\' ) {
             s3.push_back( s1[i-1] );
@@ -151,8 +160,10 @@ long editDistance( string s1, string s2, vector<int> v1, vector<int> v2, int dep
 
     long result = A[rows-1][cols-1];
 
-    if( depth == 1 )
-        cout << " " << result << endl;
+//    if( depth == 1 ) {
+//        cout << " - values returned -> " << s3 << " " << s4;
+//        cout << " " << result;
+//    }
 
     for( int i = 0; i < rows; i++ ) {
         delete [] A[i];
@@ -163,11 +174,24 @@ long editDistance( string s1, string s2, vector<int> v1, vector<int> v2, int dep
 
     s1.clear();
     s2.clear();
-    s3.clear();
-    s4.clear();
 
     return result;
 
+}
+
+vector<int> getStringInts( string s ) {
+    vector<int> temp;
+    for_each( s.begin(), s.end(), [&](char c) {
+        for( int i = 0; i < vocabNumber; i++ ) {
+            if( c == vocab.at(i) ) {
+                temp.push_back( i );
+                break;
+            }
+        }
+        if( c == '-' )
+            temp.push_back( vocabNumber );
+    } );
+    return temp;
 }
 
 // a state is composed of the starting index of each string
@@ -183,10 +207,7 @@ public:
 //    depth of state in the tree
     int depth = 0;
 
-//    when a node competes with is siblings, this parameter is used
-    float heuristicDesirability = 0.0;
-
-//    when a node is to be pruned, currently, this is the parameter to check
+//    estimated cost that will be incurred from this state to goal
     float heuristicMinCost = 0.0;
 
 //    pointer to the previous state
@@ -213,9 +234,10 @@ public:
 //    number of hyphens added in this state
     int hyphens = 0;
 
-    int findCost() {
+//    only used by Center Star Method
+    vector<string> globalAlignment;
 
-        vector<int> s(currentConcern);
+    int findCost(vector<int> s) {
 
         int cost = 0;
 
@@ -224,8 +246,13 @@ public:
             for( intIterator it = s.begin()+1; it != s.end(); it++ ) {
                 cost += (MC.at(*(s.begin()))).at(*it);
             }
+            if( *(s.begin()) == vocabNumber )
+                cost += CC;
             s.erase(s.begin());
         }
+
+        if( *(s.begin()) == vocabNumber )
+            cost += CC;
 
         return cost;
 
@@ -256,25 +283,25 @@ public:
             } else {
                 temp.push_back( '-' );
                 currentConcern.push_back( vocabNumber );
-                costIncurred += CC;
                 hyphens++;
             }
 
             stringsSoFar.push_back( temp );
-
+            temp.clear();
         }
 
 //        find cost incurred after matching
-        this->costIncurred += findCost();
+        this->costIncurred = findCost( currentConcern );
         this->costSoFar = costIncurred + previousCostSoFar;
         if( depth == 1 ) {
             viewStateInfo();
             cout << "GONNA check heuristic\n";
         }
         heuristic();
-        if( depth == 1 ) {
-            cout << "Heuristic returned is " << this->heuristicDesirability;
-        }
+
+//        if( depth == 1 ) {
+//            cout << "Heuristic returned is " << this->heuristicMinCost;
+//        }
     }
 
     ~state() {
@@ -302,7 +329,7 @@ public:
             tempState = new state(tempInts, this->startingIndex, this->stringsSoFar, this->costSoFar, this->depth);
 
 //            if the new state can be better than the solution obtained yet, use it
-            if( tempState->costSoFar < minCost ) {
+            if( tempState->costSoFar + tempState->heuristicMinCost < minCost ) {
 //                for_each( tempState->startingIndex.begin(), tempState->startingIndex.end(), [](int i) {cout<<i;} );
 //                cout << " ";
                 tempStates.push_back(*tempState);
@@ -330,13 +357,37 @@ public:
 
     }
 
+//    only used by center star method
+    void addHyphen( int k ) {
+        transform( globalAlignment.begin(), globalAlignment.end(), globalAlignment.begin(), [&](string s){
+            s.insert( s.begin() + k, '-' );
+            return s;
+//            cout << s << endl;
+        });
+    }
+
+
 // desirability of coming to this states is determined
     void heuristic() {
 
-        heuristicDesirability = 0;
+        heuristicMinCost = 0;
+
+//        going to implement Center star approximation method
+//        create a matrix of size nXn where n is the number of strings
+
+        long *stringCostSum = new long[ stringNumber ];
+
+        int **M = new int*[ stringNumber ];
+        for( int i = 0; i < stringNumber; i++ ) {
+            stringCostSum[i] = 0;
+            M[i] = new int[ stringNumber ];
+        }
 
 //        for all nC2 combination of strings, find edit distance
         for( int i = 0; i < stringNumber; i++ ) {
+
+            M[i][i] = 0;
+
             for( int j = i+1; j < stringNumber; j++ ) {
                 stringIterator s1Start = strings.at(i).begin() + this->startingIndex.at(i);
                 stringIterator s2Start = strings.at(j).begin() + this->startingIndex.at(j);
@@ -352,27 +403,166 @@ public:
                 string* s2 = new string( s2Start, s2End);
                 vector<int> v1( i1Start, i1End);
                 vector<int> v2( i2Start, i2End);
-                if( depth == 1 )
-                    cout << "Strings for editDistance " << *s1 << " " << *s2;
+
+//                if( depth == 1 )
+//                    cout << "\nStrings for editDistance " << *s1 << " " << *s2;
+
 
                 float temp = editDistance( *s1, *s2, v1, v2, depth );
-                heuristicDesirability += temp;
 
-//                max edit distance returned is the heuristicMinCost
-                if( temp > heuristicMinCost )
-                    heuristicMinCost = temp;
+//                if( depth == 1 )
+//                    cout << " " << s3 << " " << s4;
+
+                M[i][j] = temp;
+                M[j][i] = temp;
+                stringCostSum[i] += temp;
+                stringCostSum[j] += temp;
 
                 delete s1;
                 delete s2;
-//                cout << heuristicDesirability;
+                v1.clear();
+                v2.clear();
             }
         }
 
-//        average the heuristic found
-        heuristicDesirability /= (stringNumber * (stringNumber-1)/2.0);
+        long tempMinCost = 99999999;
+        int tempMinIndex;
+
+        for( int i = 0; i < stringNumber; i++ ) {
+            if( tempMinCost > stringCostSum[i] ) {
+                tempMinCost = stringCostSum[i];
+                tempMinIndex = i;
+            }
+            delete [] M[i];
+        }
 
 //        if( depth == 1 )
-//            cout << "heursitc value - " << heuristicDesirability;
+//            cout << endl;
+
+//        these will hold the aligned strings, Sc[i] being center string aligned with Si[i] string
+//        if tempMinIndex is 3, Sc[3] and Si[3] will be useless
+        vector<string> Sc;
+        vector<string> Si;
+
+//        find all the aligned strings aligned with the most similar string
+        for( int i = 0; i < stringNumber; i++ ) {
+            if( i != tempMinIndex ) {
+                stringIterator s1Start = strings.at(tempMinIndex).begin() + this->startingIndex.at(tempMinIndex);
+                stringIterator s2Start = strings.at(i).begin() + this->startingIndex.at(i);
+                stringIterator s1End = strings.at(tempMinIndex).end();
+                stringIterator s2End = strings.at(i).end();
+
+                intIterator i1Start = stringInts.at(tempMinIndex).begin() + this->startingIndex.at(tempMinIndex);
+                intIterator i2Start = stringInts.at(i).begin() + this->startingIndex.at(i);
+                intIterator i1End = stringInts.at(tempMinIndex).end();
+                intIterator i2End = stringInts.at(i).end();
+
+                string* s1 = new string( s1Start, s1End);
+                string* s2 = new string( s2Start, s2End);
+                vector<int> v1( i1Start, i1End);
+                vector<int> v2( i2Start, i2End);
+
+                editDistance( *s1, *s2, v1, v2, depth );
+
+//                now I have s3 and s4 with me which are the aligned
+
+                Sc.push_back( s3 );
+                Si.push_back( s4 );
+
+                delete s1;
+                delete s2;
+                v1.clear();
+                v2.clear();
+
+            } else {
+                Sc.push_back( "" );
+                Si.push_back( "" );
+            }
+//            if( depth == 1 ) {
+//                cout << Sc.at(i) << " " << Si.at(i) << endl;
+//            }
+        }
+
+//        now I have Sc and Si, now I have to find the global alignment
+
+        if( tempMinIndex != 0 ){
+//            cout << "\nPushing Sc " << Sc[0] << endl;
+            globalAlignment.push_back( Sc[0] );
+        }else{
+//            cout << "\nPushing Sc " << Sc[1] << endl;
+            globalAlignment.push_back( Sc[1] );
+        }
+
+        for( int i = 0; i < stringNumber; i++ ) {
+            if( tempMinIndex != i ) {
+                int max = ((globalAlignment[0]).size() > (Sc[i]).size() ? (globalAlignment[0]).size() : (Sc[i]).size());
+                int j = 0;
+                while( j != max ) {
+
+                     max = ((globalAlignment[0]).size() > (Sc[i]).size() ? (globalAlignment[0]).size() : (Sc[i]).size());
+
+                    if( j >= (globalAlignment[0]).size() ) {
+//                        cout << "1.Adding hyphen\n";
+                        addHyphen( j );
+                    } else if( j >= (Sc[i]).size() ) {
+                        (Sc[i]).insert( Sc[i].begin() + j, '-' );
+                        (Si[i]).insert( Si[i].begin() + j, '-' );
+                    }
+
+                    if( (globalAlignment[0]).at(j) != (Sc[i]).at(j) ) {
+                        if( (globalAlignment[0]).at(j) == '-' ) {
+                            (Sc[i]).insert( Sc[i].begin() + j, '-' );
+                            (Si[i]).insert( Si[i].begin() + j, '-' );
+                        } else if( (Sc[i]).at(j) == '-' ) {
+//                            cout << "2.Adding hyphen\n";
+                            addHyphen( j );
+                        }
+                    }
+                    j++;
+                }
+//                cout << "Pushing Si " << Si[i] << endl;
+                globalAlignment.push_back( Si[i] );
+            }
+        }
+
+        if( depth == 1 ) {
+            cout << "Final alignment by Center Star\n";
+            for_each( globalAlignment.begin(), globalAlignment.end(), [](string s) {
+                cout << s << endl;
+            });
+        }
+
+//        now I have a full alignment, I have to calculate the cost now which will be my estimate
+
+        string temp;
+        for( int i = 0; i < (globalAlignment[0]).size(); i++ ) {
+            temp.clear();
+            for( int j = 0; j < globalAlignment.size(); j++ ) {
+                temp.push_back( globalAlignment[j][i] );
+            }
+
+//            cout << "\nSending this to findCost " << temp << " ";
+//            vector<int> temp1 = getStringInts(temp);
+//            for_each( temp1.begin(), temp1.end(), [](int i){cout << i;});
+
+            heuristicMinCost += findCost( getStringInts(temp) );
+        }
+
+//        heuristicMinCost /= 1.5;
+
+        if( depth == 1 )
+            cout << "\nHeuristic min cost - " << heuristicMinCost << endl;
+
+        delete [] M;
+        delete [] stringCostSum;
+
+        Sc.clear();
+        Si.clear();
+        globalAlignment.clear();
+        temp.clear();
+
+//        if( depth == 1 )
+//            cout << "heursitc value - " << heuristicMinCost;
     }
 
 
@@ -396,7 +586,7 @@ public:
                 return false;
             else if( s2.costIncurred == 0 )
                 return true;
-            else if( s1.heuristicDesirability + s1.costIncurred > s2.heuristicDesirability + s2.costIncurred )
+            else if( s1.heuristicMinCost + s1.costIncurred > s2.heuristicMinCost + s2.costIncurred )
                 return true;
             else
                 return false;
@@ -417,13 +607,16 @@ public:
     }
 
     void viewStateInfo() {
+        endt = clock();
         cout << "\n\nStarting index of each string - ";
         for_each( startingIndex.begin(), startingIndex.end(), [](int i){cout << i;} );
         cout << "\nCost to come to this state from the previous state - " << costIncurred;
         cout << "\nTotal cost                                         - " << costSoFar;
         cout << "\nDepth - " << depth;
-        cout << "\nHeuristic desirability of this state - " << heuristicDesirability;
-        cout << "\nHeuristic min cost of this state - " << heuristicMinCost;
+        cout << "\nHeuristic min estimated cost of this state - " << heuristicMinCost;
+        cout << "\nGoal cost till now - " << minCost;
+        cout << "\nNodes processed till now - " << statesProcessed;
+        cout << "\nCurrent time - " << timeTaken;
         cout << "\nString upto this state including this state - \n";
         for_each( stringsSoFar.begin(), stringsSoFar.end(), [](string s){cout << s << endl;} );
 
@@ -436,7 +629,7 @@ public:
 
 main() {
 
-    time_t beg = clock();
+    begt = clock();
 
     stack<state> pendingStates;
 
@@ -483,27 +676,27 @@ main() {
     }
 
 
-//    setting the maximum length of strings
-    vecStringIterator tempvsIt= max_element( strings.begin(), strings.end(), []( string s1, string s2 ){
-       return s1.size() < s2.size();
-    });
-    for_each( strings.begin(), strings.end(), [&](string s) {
-        if( (*tempvsIt).size() == s.size() )
-            isMaxLength.push_back( true );
-        else
-            isMaxLength.push_back( false );
-    });
+////    setting the maximum length of strings
+//    vecStringIterator tempvsIt= max_element( strings.begin(), strings.end(), []( string s1, string s2 ){
+//       return s1.size() < s2.size();
+//    });
+//    for_each( strings.begin(), strings.end(), [&](string s) {
+//        if( (*tempvsIt).size() == s.size() )
+//            isMaxLength.push_back( true );
+//        else
+//            isMaxLength.push_back( false );
+//    });
 
-    for_each( isMaxLength.begin(), isMaxLength.end(), [](bool b){cout<<b;});
+//    for_each( isMaxLength.begin(), isMaxLength.end(), [](bool b){cout<<b;});
 
-//    compute average of MC's component
-    float mcSum = 0;
-    for( int i = 0; i < vocabNumber; i++ ) {
-        for( int j = 0; j < i; j++ ) {
-            mcSum += MC[i][j];
-        }
-    }
-    mcAvg = (mcSum) / ((vocabNumber*vocabNumber-vocabNumber) / 2);
+////    compute average of MC's component
+//    float mcSum = 0;
+//    for( int i = 0; i < vocabNumber; i++ ) {
+//        for( int j = 0; j < i; j++ ) {
+//            mcSum += MC[i][j];
+//        }
+//    }
+//    mcAvg = (mcSum) / ((vocabNumber*vocabNumber-vocabNumber) / 2);
 
 //    check if input received properly or not
     cout << "\nInput strings\n";
@@ -516,21 +709,14 @@ main() {
         cout << endl;
     });
 
-    cout << "MCsum and MCavg are - " << mcSum << " " << mcAvg << endl;
+//    cout << "MCsum and MCavg are - " << mcSum << " " << mcAvg << endl;
 
 //    preprocessing
 //    tells the index number in vocab corresponding to strings vector
 //    string "ABC" will be converted to {3,1,2} if vocab vector says CAB
     for_each( strings.begin(), strings.end(), [&](string s) {
-        vector<int> temp;
-        for_each( s.begin(), s.end(), [&](char c) {
-            for( int i = 0; i < vocabNumber; i++ ) {
-                if( c == vocab.at(i) ) {
-                    temp.push_back( i );
-                    break;
-                }
-            }
-        } );
+
+        vector<int> temp = getStringInts( s );
         stringInts.push_back( temp );
         temp.clear();
     });
@@ -542,19 +728,19 @@ main() {
         cout << endl;
     });
 
-//    this vector comprising of one character from each stringInts will be fed to findCost()
-    vector<int> costInput;
-
 //    STARTING AI
     pendingStates.push( currentState );
 
 
 //    DFS WORKED A BIT BETTER THAN BFS BECAUSE ONE GOAL IS REACHED INSTANTLY
-//    NOW I AM GONNA DO A*, LETS SEE IF IT CAN DO ANY GOOD
 
 //    do it till the pendingStates is not empty
     do {
+
+
 //        cout << "Stack size is " <<    pendingStates.size() << endl;
+
+
 
         currentState = pendingStates.top();
         pendingStates.pop();
@@ -570,7 +756,7 @@ main() {
             goto afterProcess;
         }
 
-        if( currentState.depth == 3 )
+        if( currentState.depth == 12 )
             currentState.viewStateInfo();
 
         if( !currentState.isGoal() ) {
@@ -600,9 +786,9 @@ main() {
 
     cout << "\n\n\n\n\n\nAnd the winner is - \n\n";
     minState.viewStateInfo();
-    time_t end = clock();
+    endt = clock();
 
-    cout << "\n\nTime taken is            - " << float(end - beg)/CLOCKS_PER_SEC;
+    cout << "\n\nTime taken is            - " << timeTaken;
     cout << "\nStates processed         - " << statesProcessed;
     cout << "\nStates encountered       - " << statesEncountered;
     cout << "\nNodes saved by heuristic - " << nodeSaved;
@@ -610,3 +796,108 @@ main() {
 
     return 0;
 }
+
+
+/*
+
+Strings for editDistance T TGA T-- TGA
+Strings for editDistance T GTG -T- GTG
+Strings for editDistance T TCGA T--- TCGA
+Strings for editDistance T G T G
+Strings for editDistance T  T -
+Strings for editDistance TGA GTG TGA GTG
+Strings for editDistance TGA TCGA T-GA TCGA
+Strings for editDistance TGA G TGA -G-
+Strings for editDistance TGA  TGA ---
+Strings for editDistance GTG TCGA GTG- TCGA
+Strings for editDistance GTG G GTG --G
+Strings for editDistance GTG  GTG ---
+Strings for editDistance TCGA G TCGA --G-
+Strings for editDistance TCGA  TCGA ----
+Strings for editDistance G  G -
+
+T-- TGA
+-T- GTG
+T--- TCGA
+T G
+T -
+Final alignment by Center Star
+-T--
+-TGA
+GTG
+-TCGA
+-G--
+----
+
+-T--
+-TGA
+-TG
+-TCGA
+
+Heuristic min cost - 37
+
+Strings for editDistance T TGA T-- TGA
+Strings for editDistance T GTG -T- GTG
+Strings for editDistance T TCGA T--- TCGA
+Strings for editDistance T G T G
+Strings for editDistance T A T A
+Strings for editDistance TGA GTG TGA GTG
+Strings for editDistance TGA TCGA T-GA TCGA
+Strings for editDistance TGA G TGA -G-
+Strings for editDistance TGA A TGA --A
+Strings for editDistance GTG TCGA GTG- TCGA
+Strings for editDistance GTG G GTG --G
+Strings for editDistance GTG A GTG -A-
+Strings for editDistance TCGA G TCGA --G-
+Strings for editDistance TCGA A TCGA ---A
+Strings for editDistance G A G A
+
+T-- TGA
+-T- GTG
+T--- TCGA
+T G
+T A
+Final alignment by Center Star
+-T--
+-TGA
+GTG
+-TCGA
+-G--
+-A--
+
+Heuristic min cost - 33.5
+
+Strings for editDistance T TGA T-- TGA
+Strings for editDistance T GTG -T- GTG
+Strings for editDistance T GTCGA -T--- GTCGA
+Strings for editDistance T  T -
+Strings for editDistance T  T -
+Strings for editDistance TGA GTG TGA GTG
+Strings for editDistance TGA GTCGA -T-GA GTCGA
+Strings for editDistance TGA  TGA ---
+Strings for editDistance TGA  TGA ---
+Strings for editDistance GTG GTCGA GT-G- GTCGA
+Strings for editDistance GTG  GTG ---
+Strings for editDistance GTG  GTG ---
+Strings for editDistance GTCGA  GTCGA -----
+Strings for editDistance GTCGA  GTCGA -----
+Strings for editDistance
+
+T-- TGA
+-T- GTG
+-T--- GTCGA
+T -
+T -
+
+-T---
+-TGA-
+GTG--
+GTCGA
+
+
+
+
+
+
+
+*/
