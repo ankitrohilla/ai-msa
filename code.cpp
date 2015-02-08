@@ -22,6 +22,9 @@ long c = 0 , d = 0;
 // name justifies
 float mcAvg = 0;
 
+//this factor decides the heuristic value
+float divideFactor = 2.0;
+
 // final cost
 long minCost = 9999999999;
 
@@ -209,6 +212,9 @@ public:
 //    this will be 1 when largest string will introduced hyphen
     int extraHyphens = 0;
 
+//    time when this state was discovered
+    float discoveredAt;
+
 //    depth of state in the tree
     int depth = 0;
 
@@ -272,12 +278,16 @@ public:
 //    5th argument is depth of the previous state
     state( vector<int> startingIndex, vector<int> previousStartingIndex, vector<string> previousStringsSoFar, int previousCostSoFar, int previousDepth ) {
 
+        endt = clock();
+
         c++;
 //        if( !(c % 1000000) )
 //            cout << "Constructed " << c << endl;
         this->startingIndex = startingIndex;
         this->depth = previousDepth + 1;
         this->costIncurred = 0;
+
+        this->discoveredAt = timeTaken;
 
         for( int i = 0; i < stringNumber; i++ ) {
             string temp = previousStringsSoFar.at(i);
@@ -328,6 +338,11 @@ public:
     state *tempState;
 
     void getState( int i ) {
+
+        endt = clock();
+
+        if( ttime - timeTaken < 20 )
+            return;
 
 //        if the whole tempInts has been created and ready
         if( i == strings.size() ) {
@@ -389,6 +404,7 @@ public:
             M[i] = new int[ stringNumber ];
         }
 
+//        (n^2)(k^2) time
 //        for all nC2 combination of strings, find edit distance
         for( int i = 0; i < stringNumber; i++ ) {
 
@@ -575,18 +591,23 @@ public:
                 if( i == tempMinIndex ) {
                     temp = *(new string(stringsSoFar[i]));
                     (tempGoal.stringsSoFar).push_back( temp.append(globalAlignment[0]) );
+                } else if( i < tempMinIndex ){
+                    temp = *(new string(stringsSoFar[i]));
+                    (tempGoal.stringsSoFar).push_back( temp.append(globalAlignment[i+1]) );
                 } else {
                     temp = *(new string(stringsSoFar[i]));
                     (tempGoal.stringsSoFar).push_back( temp.append(globalAlignment[i]) );
                 }
+
             }
             tempGoal.costSoFar = minCost;
+            tempGoal.discoveredAt = timeTaken;
             temp.clear();
             tempGoal.viewStateInfo();
             minState = new state(tempGoal);
         }
 //        ideally, it should be divided by 2
-        heuristicMinCost /= 1.3;
+        heuristicMinCost /= divideFactor;
 
 //        if( depth == 3 )
 //            cout << "\nHeuristic min cost - " << heuristicMinCost << endl;
@@ -630,16 +651,28 @@ public:
                 return false;
         });
 
-        state bestEstimate = tempStates.front();
+//        cout << "Checking the nodes to be returned\n";
+//        fflush(stdout);
+//        for_each( tempStates.begin(), tempStates.end(), [](state s){
+//            cout << s.heuristicMinCost + s.costIncurred << endl;
+//        });
+//        cout << "Checked\n";
+        fflush(stdout);
 
-//        attempt to prune worse nodes
-        for( int i = 0; i < tempStates.size(); i++ ) {
-            if( 50 - bestEstimate.costIncurred + bestEstimate.heuristicMinCost < (tempStates.at(i)).costIncurred + (tempStates.at(i)).heuristicMinCost ) {
-//                cout << "Pruning nodes\n";
-                tempStates.pop_back();
+        float minEstimate = 0;
+        if( tempStates.size() > 1 ) {
+                minEstimate = (tempStates.back()).heuristicMinCost + (tempStates.back()).costIncurred;
+
+//            attempt to prune worse nodes
+            while( true ) {
+                if( minEstimate < (tempStates.at(0)).costIncurred + (tempStates.at(0)).heuristicMinCost ) {
+//                    cout << " Pruning nodes";
+                    tempStates.erase( tempStates.begin() );
+                } else
+                    break;
             }
         }
-
+        fflush(stdout);
         return tempStates;
     }
 
@@ -661,22 +694,25 @@ public:
         cout << "\nCost to come to this state from the previous state - " << costIncurred;
         cout << "\nTotal cost                                         - " << costSoFar;
         cout << "\nDepth - " << depth;
+        cout << "\nDivide factor - " << divideFactor;
         cout << "\nHeuristic min estimated cost of this state - " << heuristicMinCost;
         cout << "\nGoal cost till now - " << minCost;
         cout << "\nNodes processed till now - " << statesProcessed;
+        cout << "\nTime this node was discovered - " << discoveredAt;
         cout << "\nCurrent time - " << timeTaken;
+        cout << "\nMaximum time - " << ttime;
         cout << "\nString upto this state including this state - \n";
         for_each( stringsSoFar.begin(), stringsSoFar.end(), [](string s){cout << s << endl;} );
 
     }
 
-}currentState;
+}startState, currentState;
 
 
 // input is the set of indices of vocab which represents character of string
 
 main() {
-
+    divideFactor = 0.9;
     begt = clock();
 
     vector<state> pendingStates;
@@ -690,6 +726,8 @@ main() {
 
     cin >> ttime >> vocabNumber;
     hyphen = vocabNumber;
+
+    ttime *= 60;
 
     char temp;
     for( int i = 0; i < vocabNumber; i++ ) {
@@ -777,36 +815,45 @@ main() {
         cout << endl;
     });
 
+    startState = *(new state( currentState ));
+
 //    STARTING AI
-    pendingStates.push_back( currentState );
+//    ITS IDA*
 
+    start:
+    divideFactor += 0.1;
+    pendingStates.push_back( startState );
 
-//    DFS WORKED A BIT BETTER THAN BFS BECAUSE ONE GOAL IS REACHED INSTANTLY
 
 //    do it till the pendingStates is not empty
     do {
 
+//        return the result obtained, no time is left
+        if( ttime - timeTaken < 10 )
+            goto done;
+
         static int timer = 0;
         timer++;
 
-        currentState = pendingStates.back();
-        pendingStates.pop_back();
+//        currentState = pendingStates.back();
+//        pendingStates.pop_back();
 
-
-        if( timer % 500 ) {
-//            currentState = pendingStates.back();
-//            pendingStates.pop_back();
+//        if part is lowest cost search
+//        else part is A*
+        if( timer % (500/stringNumber) ) {
+            currentState = pendingStates.back();
+            pendingStates.pop_back();
         } else {
             cout << "Stack size is " <<    pendingStates.size() << endl;
-//            stateIterator sIt = min_element( pendingStates.begin(), pendingStates.end(), [](state a, state b){
-//                    if( a.costSoFar + a.heuristicMinCost < b.costSoFar + b.heuristicMinCost )
-//                       return true;
-//                    else
-//                       return false;
-//                });
-//            currentState = *sIt;
-//            currentState.viewStateInfo();
-//            pendingStates.erase( sIt );
+            stateIterator sIt = min_element( pendingStates.begin(), pendingStates.end(), [](state a, state b){
+                    if( a.costSoFar + a.heuristicMinCost < b.costSoFar + b.heuristicMinCost )
+                       return true;
+                    else
+                       return false;
+                });
+            currentState = *sIt;
+            currentState.viewStateInfo();
+            pendingStates.erase( sIt );
         }
 
         statesEncountered++;
@@ -848,6 +895,11 @@ main() {
         statesProcessed++;
         afterProcess:;
     } while( !pendingStates.empty() );
+
+    if( ttime - timeTaken > 30 )
+        goto start;
+
+    done:
 
     cout << "\n\n\n\n\n\nAnd the winner is - \n\n";
     minState->viewStateInfo();

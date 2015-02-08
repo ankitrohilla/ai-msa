@@ -1,13 +1,43 @@
-5.5                                                  
-4
-A, C, T, G
-3
-ACTGTGAGCTGATTGGACA
-TACCGAGTTGGACCTCCCA
-CTGACACACCAGGTAT
+8
+9
+a, s, d, f, g, h, j, k, l
+10
+jaskdfadhflkjashflakjsdhfakljsdfh
+askdfhksaljdfhalskjdhflkjadshfalskdjfdlfh
+klsadhfslakdhfalskjdhflaksdhflkasdjf
+asdkfjhasdlkfhaskljdfhlaskdfhafdsh
+akjsdhfkjasdhsadklfhsaldkfh
+ajhfdsadskjhfadskfhdsafllkjasdfh
+lsakdjfhlsadhflkjahdsflkjhadslfh
+kjsagdfjgksadhfkljagsdflkjglkaj
+hhgkhgasdfhglhlashdfjkl
+ahshdflkashfdjaksldhlasdhajdsklfh
 1
 0 3 3 3 1
-3 0 3 3 1
+3 0 3 3 1 
 3 3 0 3 1
 3 3 3 0 1
 1 1 1 1 0
+
+actg            gt--gtgt
+tga             acccg-ga
+cagtga          ----gtga
+
+
+String so far
+-actg-
+---tga
+cagtga
+
+Final alignment by Center Star
+----gtga
+gt--gtgt
+acccg-ga
+
+tempMinIndex = 2
+
+Final answer
+-actg-----gtga
+---tgagt--gtgt
+cagtga----gtga
+
