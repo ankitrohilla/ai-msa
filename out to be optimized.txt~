@@ -97,15 +97,15 @@ GTA---CGAT-G-CTAGCATCGAT-AGTAC--GTATCA--T--C-GTA-CGT-A--G--C-T--A-G--C-----T-AG-
 Center Star found minimum cost goal - 13997
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11303524
+Cost to come to this state from the previous state - 17922580
 Total cost                                         - 13997
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13997
 Nodes processed till now - 0
-Time this node was discovered - 0.279616
-Current time - 0.285964
+Time this node was discovered - 0.001398
+Current time - 0.046802
 Maximum time - 240
 String upto this state including this state - 
 T--A---C--T-G-C-A-C--CG---A-T-C--G----A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G-A-T-CG-A-T----C-G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -175,15 +175,15 @@ GTA---CGAT-G-CTAGCATCGAT-AGTAC--GTATCA--T--C-GTA-CGT-A--G--C-T--A-G--C-----T-AG-
 Center Star found minimum cost goal - 13975
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11386324
+Cost to come to this state from the previous state - 17924660
 Total cost                                         - 13975
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13975
 Nodes processed till now - 0
-Time this node was discovered - 0.286157
-Current time - 0.292441
+Time this node was discovered - 0.046896
+Current time - 0.083381
 Maximum time - 240
 String upto this state including this state - 
 T--A---C--T-G-C-A-C--CG---A-T-C--G----A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G-A-T-CG-A-T----C-G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -253,15 +253,15 @@ T-A---CG-TAG-CTA-G--CT---A---C--G----A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-
 Center Star found minimum cost goal - 13972
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11401924
+Cost to come to this state from the previous state - 17926516
 Total cost                                         - 13972
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13972
 Nodes processed till now - 0
-Time this node was discovered - 0.298845
-Current time - 0.305374
+Time this node was discovered - 0.119564
+Current time - 0.156935
 Maximum time - 240
 String upto this state including this state - 
 T--A---C--T-G-C-A-C--CG---A-T-C--G----A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G-A-T-CG-A-T----C-G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -331,15 +331,15 @@ T-A---CG-TAG-CTA-G--CT---A---C--G----A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-
 Center Star found minimum cost goal - 13965
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11387396
+Cost to come to this state from the previous state - 17965060
 Total cost                                         - 13965
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13965
 Nodes processed till now - 0
-Time this node was discovered - 0.323344
-Current time - 0.329578
+Time this node was discovered - 0.263501
+Current time - 0.298605
 Maximum time - 240
 String upto this state including this state - 
 T--A---C--T-G-C-A-C--CG---A-T-C--G----A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G-A-T-CG-A-T----C-G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -409,15 +409,15 @@ T-A---CG-TAG-CTA-G--CT---A---C--G----A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-
 Center Star found minimum cost goal - 13954
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11185252
+Cost to come to this state from the previous state - 17930484
 Total cost                                         - 13954
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13954
 Nodes processed till now - 0
-Time this node was discovered - 0.371356
-Current time - 0.377265
+Time this node was discovered - 0.546184
+Current time - 0.582427
 Maximum time - 240
 String upto this state including this state - 
 T--A---C--T-G-C-A-C--CG---A-T-C--G----A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G-A-T-CG-A-T----C-G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -487,15 +487,15 @@ GA------T-G---A-T-CG---TT-A--GTA--G--C-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C-
 Center Star found minimum cost goal - 13872
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11117668
+Cost to come to this state from the previous state - 17965892
 Total cost                                         - 13872
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13872
 Nodes processed till now - 0
-Time this node was discovered - 0.37734
-Current time - 0.383172
+Time this node was discovered - 0.582512
+Current time - 0.617917
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G-A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -565,15 +565,15 @@ GA------T-G---A-T-CG---TT-A--GTA--G--C-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C-
 Center Star found minimum cost goal - 13854
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11303524
+Cost to come to this state from the previous state - 17929780
 Total cost                                         - 13854
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13854
 Nodes processed till now - 0
-Time this node was discovered - 0.383231
-Current time - 0.389427
+Time this node was discovered - 0.617979
+Current time - 0.654811
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G-A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -643,15 +643,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G-A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A-
 Center Star found minimum cost goal - 13851
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11303524
+Cost to come to this state from the previous state - 17930036
 Total cost                                         - 13851
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13851
 Nodes processed till now - 0
-Time this node was discovered - 0.396278
-Current time - 0.402455
+Time this node was discovered - 0.689919
+Current time - 0.725179
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G-A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -721,15 +721,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G-A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A-
 Center Star found minimum cost goal - 13844
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11369940
+Cost to come to this state from the previous state - 17964004
 Total cost                                         - 13844
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13844
 Nodes processed till now - 0
-Time this node was discovered - 0.419773
-Current time - 0.425639
+Time this node was discovered - 0.831695
+Current time - 0.868138
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G-A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -799,15 +799,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G-A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A-
 Center Star found minimum cost goal - 13833
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11373780
+Cost to come to this state from the previous state - 17941924
 Total cost                                         - 13833
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13833
 Nodes processed till now - 0
-Time this node was discovered - 0.467756
-Current time - 0.473735
+Time this node was discovered - 1.11661
+Current time - 1.15421
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G-A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -877,15 +877,15 @@ GA------T-G---A-T-CG---TT-A--GTA--G--C-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C-
 Center Star found minimum cost goal - 13832
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11221780
+Cost to come to this state from the previous state - 17924852
 Total cost                                         - 13832
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13832
 Nodes processed till now - 0
-Time this node was discovered - 0.568789
-Current time - 0.575206
+Time this node was discovered - 1.722
+Current time - 1.75825
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G-A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -955,15 +955,15 @@ GA------T-G---A-T-CG---TT-A--GTA--G--C-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C-
 Center Star found minimum cost goal - 13815
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11401828
+Cost to come to this state from the previous state - 17963396
 Total cost                                         - 13815
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13815
 Nodes processed till now - 0
-Time this node was discovered - 0.575291
-Current time - 0.581369
+Time this node was discovered - 1.75831
+Current time - 1.79703
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G-A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -1033,15 +1033,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G-A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A-
 Center Star found minimum cost goal - 13813
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11423316
+Cost to come to this state from the previous state - 17932372
 Total cost                                         - 13813
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13813
 Nodes processed till now - 0
-Time this node was discovered - 0.58754
-Current time - 0.594127
+Time this node was discovered - 1.83751
+Current time - 1.87657
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G-A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -1111,15 +1111,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G-A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A-
 Center Star found minimum cost goal - 13807
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11400020
+Cost to come to this state from the previous state - 17947412
 Total cost                                         - 13807
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13807
 Nodes processed till now - 0
-Time this node was discovered - 0.612796
-Current time - 0.61884
+Time this node was discovered - 1.98748
+Current time - 2.02312
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G-A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -1189,15 +1189,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G-A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A-
 Center Star found minimum cost goal - 13797
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11461604
+Cost to come to this state from the previous state - 17966804
 Total cost                                         - 13797
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13797
 Nodes processed till now - 0
-Time this node was discovered - 0.661349
-Current time - 0.667096
+Time this node was discovered - 2.279
+Current time - 2.31514
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G-A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -1267,15 +1267,15 @@ CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C
 Center Star found minimum cost goal - 13792
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11396628
+Cost to come to this state from the previous state - 17980836
 Total cost                                         - 13792
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13792
 Nodes processed till now - 0
-Time this node was discovered - 0.766171
-Current time - 0.772463
+Time this node was discovered - 2.90088
+Current time - 2.93846
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -1345,15 +1345,15 @@ CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C
 Center Star found minimum cost goal - 13778
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11461604
+Cost to come to this state from the previous state - 17982612
 Total cost                                         - 13778
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13778
 Nodes processed till now - 0
-Time this node was discovered - 0.772534
-Current time - 0.778744
+Time this node was discovered - 2.93852
+Current time - 2.9786
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -1423,15 +1423,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13775
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11396628
+Cost to come to this state from the previous state - 18053652
 Total cost                                         - 13775
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13775
 Nodes processed till now - 0
-Time this node was discovered - 0.784798
-Current time - 0.791143
+Time this node was discovered - 3.01787
+Current time - 3.05433
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -1501,15 +1501,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13768
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11221780
+Cost to come to this state from the previous state - 18058884
 Total cost                                         - 13768
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13768
 Nodes processed till now - 0
-Time this node was discovered - 0.810193
-Current time - 0.816361
+Time this node was discovered - 3.16453
+Current time - 3.20104
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -1579,15 +1579,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13757
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11067604
+Cost to come to this state from the previous state - 18066388
 Total cost                                         - 13757
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13757
 Nodes processed till now - 0
-Time this node was discovered - 0.857912
-Current time - 0.863738
+Time this node was discovered - 3.45386
+Current time - 3.49082
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -1657,15 +1657,15 @@ CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C
 Center Star found minimum cost goal - 13750
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11081476
+Cost to come to this state from the previous state - 18051284
 Total cost                                         - 13750
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13750
 Nodes processed till now - 0
-Time this node was discovered - 0.957735
-Current time - 0.963533
+Time this node was discovered - 4.06726
+Current time - 4.10296
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -1735,15 +1735,15 @@ CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C
 Center Star found minimum cost goal - 13737
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11431476
+Cost to come to this state from the previous state - 18068596
 Total cost                                         - 13737
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13737
 Nodes processed till now - 0
-Time this node was discovered - 0.963604
-Current time - 0.969401
+Time this node was discovered - 4.10303
+Current time - 4.13847
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -1813,15 +1813,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13735
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11337540
+Cost to come to this state from the previous state - 18087860
 Total cost                                         - 13735
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13735
 Nodes processed till now - 0
-Time this node was discovered - 0.975375
-Current time - 0.981579
+Time this node was discovered - 4.17514
+Current time - 4.21035
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -1891,15 +1891,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13729
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11512180
+Cost to come to this state from the previous state - 17952404
 Total cost                                         - 13729
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13729
 Nodes processed till now - 0
-Time this node was discovered - 1.00068
-Current time - 1.00681
+Time this node was discovered - 4.31756
+Current time - 4.35298
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -1969,15 +1969,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13719
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11400996
+Cost to come to this state from the previous state - 18054404
 Total cost                                         - 13719
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13719
 Nodes processed till now - 0
-Time this node was discovered - 1.04737
-Current time - 1.05325
+Time this node was discovered - 4.60354
+Current time - 4.63885
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -2047,15 +2047,15 @@ CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C
 Center Star found minimum cost goal - 13715
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11549588
+Cost to come to this state from the previous state - 17977492
 Total cost                                         - 13715
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13715
 Nodes processed till now - 0
-Time this node was discovered - 1.71412
-Current time - 1.72029
+Time this node was discovered - 8.63752
+Current time - 8.67287
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -2125,15 +2125,15 @@ CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C
 Center Star found minimum cost goal - 13703
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11400580
+Cost to come to this state from the previous state - 17965332
 Total cost                                         - 13703
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13703
 Nodes processed till now - 0
-Time this node was discovered - 1.72036
-Current time - 1.72656
+Time this node was discovered - 8.67293
+Current time - 8.71097
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -2203,15 +2203,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13702
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11552084
+Cost to come to this state from the previous state - 17977396
 Total cost                                         - 13702
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13702
 Nodes processed till now - 0
-Time this node was discovered - 1.73269
-Current time - 1.73882
+Time this node was discovered - 8.74784
+Current time - 8.78326
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -2281,15 +2281,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13697
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11554580
+Cost to come to this state from the previous state - 18108116
 Total cost                                         - 13697
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13697
 Nodes processed till now - 0
-Time this node was discovered - 1.75709
-Current time - 1.76333
+Time this node was discovered - 8.89019
+Current time - 8.9269
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -2359,15 +2359,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13688
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11540852
+Cost to come to this state from the previous state - 18090660
 Total cost                                         - 13688
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13688
 Nodes processed till now - 0
-Time this node was discovered - 1.80526
-Current time - 1.81117
+Time this node was discovered - 9.17877
+Current time - 9.21591
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -2437,15 +2437,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13683
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11395748
+Cost to come to this state from the previous state - 17952308
 Total cost                                         - 13683
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13683
 Nodes processed till now - 0
-Time this node was discovered - 3.32241
-Current time - 3.32844
+Time this node was discovered - 18.2749
+Current time - 18.3102
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -2515,15 +2515,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13675
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11410276
+Cost to come to this state from the previous state - 18056132
 Total cost                                         - 13675
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13675
 Nodes processed till now - 0
-Time this node was discovered - 3.32857
-Current time - 3.33474
+Time this node was discovered - 18.3102
+Current time - 18.3457
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -2593,15 +2593,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13670
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11532244
+Cost to come to this state from the previous state - 17984708
 Total cost                                         - 13670
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13670
 Nodes processed till now - 0
-Time this node was discovered - 9.52997
-Current time - 9.53578
+Time this node was discovered - 55.3862
+Current time - 55.4252
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -2671,15 +2671,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13669
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11544180
+Cost to come to this state from the previous state - 18093364
 Total cost                                         - 13669
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13669
 Nodes processed till now - 0
-Time this node was discovered - 14.2239
-Current time - 14.2298
+Time this node was discovered - 83.1306
+Current time - 83.1662
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -2749,15 +2749,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13657
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11538404
+Cost to come to this state from the previous state - 18143604
 Total cost                                         - 13657
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13657
 Nodes processed till now - 0
-Time this node was discovered - 15.8137
-Current time - 15.8201
+Time this node was discovered - 92.3777
+Current time - 92.42
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -2827,15 +2827,15 @@ TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A
 Center Star found minimum cost goal - 13653
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11552084
+Cost to come to this state from the previous state - 18072996
 Total cost                                         - 13653
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
 Goal cost till now - 13653
 Nodes processed till now - 0
-Time this node was discovered - 22.0274
-Current time - 22.0336
+Time this node was discovered - 129.599
+Current time - 129.635
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -2858,786 +2858,6 @@ G-----C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-
 -TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
 -TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
 --AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-String so far
-T
-A
-A
-G
-A
-C
-A
--
--
-C
-G
-T
--
--
--
--
-T
-T
-T
--
-Final alignment by Center Star
--A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
------C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
------C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
--T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
--AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
------CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
--AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
--AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
--AGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
------C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
--AG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
--------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
---------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
--AG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
--AT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
--A---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
--AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-
-
-Center Star found minimum cost goal - 13649
-
-Starting index of each string - 
-Cost to come to this state from the previous state - 11552500
-Total cost                                         - 13649
-Depth - 0
-Divide factor - 1
-Heuristic min estimated cost of this state - 0
-Goal cost till now - 13649
-Nodes processed till now - 0
-Time this node was discovered - 39.1333
-Current time - 39.1392
-Maximum time - 240
-String upto this state including this state - 
-T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-A-----C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
-A-----C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-GCAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
-A-T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
-C-AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
-A-----CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
---AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
---AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
-C-AGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
-G-----C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
-T-AG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
---------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
-------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
----------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
-------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
-T-AG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
-T-AT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
-T-A---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
---AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-String so far
-T
-A
-A
-G
-A
-C
-A
--
--
-C
-G
-T
--
--
--
--
-T
--
--
--
-Final alignment by Center Star
--A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
------C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
------C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
--T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
--AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
------CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
--AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
--AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
--AGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
------C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
--AG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
--------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
---------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
--AG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
-TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
-TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
--AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-
-
-Center Star found minimum cost goal - 13647
-
-Starting index of each string - 
-Cost to come to this state from the previous state - 11546676
-Total cost                                         - 13647
-Depth - 0
-Divide factor - 1
-Heuristic min estimated cost of this state - 0
-Goal cost till now - 13647
-Nodes processed till now - 0
-Time this node was discovered - 39.1689
-Current time - 39.1751
-Maximum time - 240
-String upto this state including this state - 
-T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-A-----C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
-A-----C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-GCAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
-A-T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
-C-AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
-A-----CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
---AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
---AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
-C-AGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
-G-----C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
-T-AG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
---------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
-------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
----------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
-------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
-T-AG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
--TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
--TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
---AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-String so far
-T
-A
-A
-G
-A
-C
-A
--
--
-C
-G
-T
--
--
--
--
--
--
--
--
-Final alignment by Center Star
--A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
------C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
------C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
--T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
--AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
------CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
--AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
--AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
--AGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
------C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
--AG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
--------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
---------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
-TAG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
-TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
-TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
--AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-
-
-Center Star found minimum cost goal - 13640
-
-Starting index of each string - 
-Cost to come to this state from the previous state - 11545012
-Total cost                                         - 13640
-Depth - 0
-Divide factor - 1
-Heuristic min estimated cost of this state - 0
-Goal cost till now - 13640
-Nodes processed till now - 0
-Time this node was discovered - 39.2162
-Current time - 39.222
-Maximum time - 240
-String upto this state including this state - 
-T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-A-----C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
-A-----C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-GCAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
-A-T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
-C-AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
-A-----CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
---AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
---AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
-C-AGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
-G-----C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
-T-AG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
---------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
-------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
----------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
-------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
--TAG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
--TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
--TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
---AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-String so far
-T
-A
-A
-G
-A
-C
-A
--
--
-C
-G
--
--
--
--
--
--
--
--
--
-Final alignment by Center Star
--A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
------C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
------C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
--T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
--AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
------CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
--AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
--AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
--AGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
------C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
-TAG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
--------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
---------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
-TAG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
-TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
-TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
--AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-
-
-Center Star found minimum cost goal - 13629
-
-Starting index of each string - 
-Cost to come to this state from the previous state - 11542932
-Total cost                                         - 13629
-Depth - 0
-Divide factor - 1
-Heuristic min estimated cost of this state - 0
-Goal cost till now - 13629
-Nodes processed till now - 0
-Time this node was discovered - 40.7588
-Current time - 40.7647
-Maximum time - 240
-String upto this state including this state - 
-T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-A-----C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
-A-----C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-GCAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
-A-T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
-C-AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
-A-----CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
---AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
---AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
-C-AGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
-G-----C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
--TAG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
---------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
-------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
----------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
-------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
--TAG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
--TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
--TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
---AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-String so far
-T
-A
-A
-G
-A
-C
-A
--
--
--
-G
--
--
--
--
--
--
--
--
--
-Final alignment by Center Star
--A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
------C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
------C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
--T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
--AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
------CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
--AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
--AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
-CAGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
------C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
-TAG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
--------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
---------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
-TAG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
-TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
-TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
--AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-
-
-Center Star found minimum cost goal - 13626
-
-Starting index of each string - 
-Cost to come to this state from the previous state - 11533908
-Total cost                                         - 13626
-Depth - 0
-Divide factor - 1
-Heuristic min estimated cost of this state - 0
-Goal cost till now - 13626
-Nodes processed till now - 0
-Time this node was discovered - 46.897
-Current time - 46.9034
-Maximum time - 240
-String upto this state including this state - 
-T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-A-----C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
-A-----C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-GCAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
-A-T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
-C-AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
-A-----CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
---AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
---AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
--CAGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
-G-----C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
--TAG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
---------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
-------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
----------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
-------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
--TAG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
--TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
--TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
---AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-String so far
-T
-A
-A
-G
-A
-C
--
--
--
-C
-G
-T
--
--
--
--
-T
-T
-T
--
-Final alignment by Center Star
--A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
------C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
------C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
--T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
--AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
--A---CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
--AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
--AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
--AGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
------C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
--AG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
--------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
---------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
--AG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
--AT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
--A---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
--AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-
-
-Center Star found minimum cost goal - 13625
-
-Starting index of each string - 
-Cost to come to this state from the previous state - 11549588
-Total cost                                         - 13625
-Depth - 0
-Divide factor - 1
-Heuristic min estimated cost of this state - 0
-Goal cost till now - 13625
-Nodes processed till now - 0
-Time this node was discovered - 88.8565
-Current time - 88.8626
-Maximum time - 240
-String upto this state including this state - 
-T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-A-----C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
-A-----C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-GCAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
-A-T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
-C-AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
---A---CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
---AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
---AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
-C-AGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
-G-----C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
-T-AG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
---------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
-------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
----------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
-------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
-T-AG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
-T-AT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
-T-A---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
---AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-String so far
-T
-A
-A
-G
-A
-C
--
--
--
-C
-G
-T
--
--
--
--
--
--
--
--
-Final alignment by Center Star
--A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
------C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
------C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
--T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
--AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
--A---CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
--AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
--AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
--AGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
------C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
--AG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
--------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
---------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
-TAG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
-TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
-TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
--AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-
-
-Center Star found minimum cost goal - 13619
-
-Starting index of each string - 
-Cost to come to this state from the previous state - 11550836
-Total cost                                         - 13619
-Depth - 0
-Divide factor - 1
-Heuristic min estimated cost of this state - 0
-Goal cost till now - 13619
-Nodes processed till now - 0
-Time this node was discovered - 88.9393
-Current time - 88.9454
-Maximum time - 240
-String upto this state including this state - 
-T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-A-----C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
-A-----C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-GCAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
-A-T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
-C-AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
---A---CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
---AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
---AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
-C-AGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
-G-----C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
-T-AG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
---------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
-------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
----------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
-------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
--TAG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
--TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
--TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
---AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-String so far
-T
-A
-A
-G
-A
-C
--
--
--
-C
-G
--
--
--
--
--
--
--
--
--
-Final alignment by Center Star
--A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
------C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
------C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
--T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
--AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
--A---CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
--AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
--AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
--AGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
------C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
-TAG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
--------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
---------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
-TAG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
-TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
-TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
--AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-
-
-Center Star found minimum cost goal - 13609
-
-Starting index of each string - 
-Cost to come to this state from the previous state - 11551668
-Total cost                                         - 13609
-Depth - 0
-Divide factor - 1
-Heuristic min estimated cost of this state - 0
-Goal cost till now - 13609
-Nodes processed till now - 0
-Time this node was discovered - 90.459
-Current time - 90.4651
-Maximum time - 240
-String upto this state including this state - 
-T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-A-----C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
-A-----C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-GCAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
-A-T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
-C-AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
---A---CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
---AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
---AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
-C-AGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
-G-----C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
--TAG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
---------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
-------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
----------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
-------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
--TAG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
--TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
--TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
---AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-String so far
-T
-A
-A
-G
-A
-C
--
--
--
--
-G
--
--
--
--
--
--
--
--
--
-Final alignment by Center Star
--A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
------C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
------C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
--T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
--AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
--A---CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
--AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
--AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
-CAGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
------C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
-TAG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
--------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
---------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
-TAG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
-TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
-TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
--AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-
-
-Center Star found minimum cost goal - 13607
-
-Starting index of each string - 
-Cost to come to this state from the previous state - 11604148
-Total cost                                         - 13607
-Depth - 0
-Divide factor - 1
-Heuristic min estimated cost of this state - 0
-Goal cost till now - 13607
-Nodes processed till now - 0
-Time this node was discovered - 96.5338
-Current time - 96.5396
-Maximum time - 240
-String upto this state including this state - 
-T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-A-----C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
-A-----C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-GCAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
-A-T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
-C-AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
---A---CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
---AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
---AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
--CAGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
-G-----C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
--TAG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
---------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
-------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
----------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
-------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
--TAG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
--TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
--TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
---AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-String so far
-T
-A
-A
-G
-A
--
--
--
--
--
-G
-T
--
--
--
--
-T
-T
-T
--
-Final alignment by Center Star
--A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
------C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
------C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-CAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
--T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
-CAG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
--A---CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
--AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
--AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
-CAGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
------C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
--AG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
--------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
---------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
--AG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
--AT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
--A---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
--AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-
-
-Center Star found minimum cost goal - 13601
-
-Starting index of each string - 
-Cost to come to this state from the previous state - 11532884
-Total cost                                         - 13601
-Depth - 0
-Divide factor - 1
-Heuristic min estimated cost of this state - 0
-Goal cost till now - 13601
-Nodes processed till now - 0
-Time this node was discovered - 194.159
-Current time - 194.165
-Maximum time - 240
-String upto this state including this state - 
-T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
-A-----C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-C--G--A---TC-G----TCC-T-A-G----C----A-T-C-G---A-T-C-G---G-C---GTAC-T--
-A-----C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
-GCAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
-A-T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
--CAG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
---A---CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
---AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
---AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
--CAGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
-G-----C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
-T-AG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
---------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
-------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
----------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
-------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
-T-AG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
-T-AT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
-T-A---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
---AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
 
 
 
@@ -3649,15 +2869,15 @@ And the winner is -
 
 
 Starting index of each string - 
-Cost to come to this state from the previous state - 11532884
-Total cost                                         - 13601
+Cost to come to this state from the previous state - 18072996
+Total cost                                         - 13653
 Depth - 0
 Divide factor - 1
 Heuristic min estimated cost of this state - 0
-Goal cost till now - 13601
+Goal cost till now - 13653
 Nodes processed till now - 1
-Time this node was discovered - 194.159
-Current time - 230.005
+Time this node was discovered - 129.599
+Current time - 230.01
 Maximum time - 240
 String upto this state including this state - 
 T-A---C--T-G-C-A-C-CG---AT-C--G--A--T--C-G-A-C-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--A---T--G--A-T-C-G-A-T----C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
@@ -3665,24 +2885,24 @@ A-----C--T-GTG-A-A-CG---AT-C--G--A--TG-C---ATC-G-A--T--C-G--ATG--C-A---T-CG-A-T-
 A-----C--T-G-A-A-G-CT---AG-C--T--A--T--C-G-A-C-T-A--G----T--ACG--T-A---T-CG-ACTAC--GTCA------G--A-TGC---A-TG---C--T-A-T---G---A-T---G-AGT-C---T-AG-T--
 GCAT--CGATCG-T-A-G-C----AT-C--G--A--T--C-G-A-C-TGAT-GA-C-TAGA-GT-C-ATGCTACG-A---C--G--A------GC-A-T-C-G---TG---C----A-T---G---A-T-C-G-A-T-C---G-A--T--
 A-T---CG-TCG-T-A-CATG---AT----G--AC-T--C-G-----T-A--A--T-T--A-G----A---T--GTATTAA--GTTA---T-----A-T---G---T-------G-A-T-A-T---A-TGCTG---T-C---GTAGCT--
--CAG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
---A---CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
---AT--C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
+C-AG--C--T-G-C-A-T-CGT--AG-C-----A--T--C-G-A---T----G--CAT----G--C-A---T-CG-A-TGCATC--A---T--G--ATT-A-T-A-TAAAAC----A-TGC-T---A-G-CTG-C-TGCT--G-C--T--
+A-----CG-TAG-C-A-T-CGT--AG-C-----A--T------A-G-T-A--G--C-T--A-G--C-A---T-CG-A-T-C--G--ATCTTACT--A-T-A-G-C-TA---C--G-A-T-C-----A-T-C-G-A-T-CGTAGCA--TCG
+A-T---C----G---A-T-CG---AT-C--G--A--T--C-GTA-C-G-AT-G--C-T--ACGA-CTA---G-CT-AGT-A--G--A---TA-G--C-T---G-A-T----A--GTAGT-A-GT--AGTAC-T-A---C---G-------
 --AT--C----G-T-A---CGT--AT-C--GT-AGCTGACTG-A-C-TGATCGA-C-T--A-G--CTA-----CG---T----G--AC--T--G--A-T---GTA-T----CA-G---T-C-G---T-T-C---A-T-C---G-AT-T--
 -CAGTTCA-T-G-CTA---CGATTATAC--G--A--T--A-GCATCGT-A--GT-CAT--A-G--CTA-----CG-T-TAC--G--A---T--GC-A-T-C-G-A-T-------G-----C-----A-T-C-G-A-T-C--------T--
 G-----C--T-A-CGA-T-CG---AT-A--G--A--T--C-G-ATCGT-A--G--CATCGATGT-CTA-----CG-A-T-C--GT-A---TC-G--A-T-A-GTA-TG---C--GTA-G-CTG---C-TACGGCA-A-C---G----T--
-T-AG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
+-TAG--CA-T-G-CTAGC-AT---ATGCTAG--C--TA-C-GTA-CGT-AC-G----T--A-G--C-A---T-CG-A-T-C--GT-A------GC-A-T---GTA-T-------G-A-TGC-T---A---C-G-A-T-C---GTA-----
 --------------------------------------------------------------------------------------------------------------------------G---A---C---A-T-----G-------
 ------C----G---A---TG---AT-C--GTTAG-TAGC-T-A-CGT-A--G--C-T--ACGTAC-G---TACGTA---C--GT-A------G--A-T-C-GTA------C--GTA---C-G---A-T---GAA-T-A---G----C--
 ---------------------------------------C-G-------A-------T----G--C-----T--G-----C---------T-----A-----G-A-T----C--G---T---G-----T-----A-T-C-----------
 ------C----G-T-A---CG---ATGCTAGC-A--T--C-G-A---T-A--GTACGT--A-T--C-A---T-CGTA---C--GT-AGC-TA-GCTA-G-CTG---TG---CTAGCACT-A-GC--A---C---A---C---GAAGCTA-
-T-AG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
-T-AT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
-T-A---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
+-TAG--C--TAG-CTA-G-CT---AG-C--T--A-----C-GTA-CGT-AC-G----T--ACG----A---T--G-A-T-C--G--A---TC-G--ACTAC-GTA------C--GTA---C-G---A-T-C-GTA---C---GTAC-G--
+-TAT--CG-TAG-CTA---CG---AT-C--G--A--T--C-G-A---T-C--G--A-T--C-G----A---T-CG-A-T-C--GT-A------G--C-TAC-GTA-G----CA-T-AGTAC-GCTTA-T-T-GCA-TGC---T-A--G--
+-TA---CG-TAG-CTA-G-CT---A--C--G--A--TG-C-T-AGC-T-A--G--C-T--A-G--C-----T-AG-C-T-A--G--C---T--G--ACT---G-ACT-------G-ACT---G---A-T-C-G-A-T-C---G-------
 --AT--CGATCG---A-T-CG---AT-C--G--A--T--C-GTA-CGT-AC-GTACGT--ACG--T-A-----CGTA---C--G--A---TC-G--A-T-C-GTA------C--G-A-T-C-G---A-T-C-G-A-T-C---G-A--T--
 
 
-Time taken is            - 230.005
+Time taken is            - 230.01
 States processed         - 1
 States encountered       - 1
 Nodes saved by heuristic - 0

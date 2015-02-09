@@ -32,6 +32,10 @@ long minCost = 9999999999;
 // purely temporary
 string s3, s4;
 
+//20 is the max number of strings
+string storeStrings[2][2][20][20][2];
+long storeCosts[2][2][20][20];
+
 // for analysis
 long statesProcessed = 0;
 long statesEncountered = 0;
@@ -236,6 +240,9 @@ public:
 //    starting indices for each string
     vector<int> startingIndex;
 
+//    starting index for previous state
+    vector<int> previousStartingIndex;
+
 //    this is to be fed to findCost to find costIncurred, this will include hyphens
     vector<int> currentConcern;
 
@@ -284,6 +291,17 @@ public:
 //        if( !(c % 1000000) )
 //            cout << "Constructed " << c << endl;
         this->startingIndex = startingIndex;
+        this->previousStartingIndex = previousStartingIndex;
+
+//        for_each( startingIndex.begin(), startingIndex.end(), [](int i){
+//            cout << i;
+//        });
+//        cout << endl;
+//        for_each( previousStartingIndex.begin(), previousStartingIndex.end(), [](int i){
+//            cout << i;
+//        });
+//        cout << endl;
+
         this->depth = previousDepth + 1;
         this->costIncurred = 0;
 
@@ -341,7 +359,7 @@ public:
 
         endt = clock();
 
-        if( ttime - timeTaken < 20 )
+        if( ttime - timeTaken < 10 )
             return;
 
 //        if the whole tempInts has been created and ready
@@ -391,6 +409,8 @@ public:
 // desirability of coming to this states is determined
     void heuristic() {
 
+        cout << "Finding h";fflush(stdout);
+
         heuristicMinCost = 0;
 
 //        going to implement Center star approximation method
@@ -398,52 +418,24 @@ public:
 
         long *stringCostSum = new long[ stringNumber ];
 
-        int **M = new int*[ stringNumber ];
         for( int i = 0; i < stringNumber; i++ ) {
             stringCostSum[i] = 0;
-            M[i] = new int[ stringNumber ];
         }
 
-//        (n^2)(k^2) time
-//        for all nC2 combination of strings, find edit distance
-        for( int i = 0; i < stringNumber; i++ ) {
+//        for all nC2 combination of strings, find edit distance cost
+        for( int k = 0; k < stringNumber; k++ ) {
 
-            M[i][i] = 0;
+            for( int l = k+1; l < stringNumber; l++ ) {
 
-            for( int j = i+1; j < stringNumber; j++ ) {
-                stringIterator s1Start = strings.at(i).begin() + this->startingIndex.at(i);
-                stringIterator s2Start = strings.at(j).begin() + this->startingIndex.at(j);
-                stringIterator s1End = strings.at(i).end();
-                stringIterator s2End = strings.at(j).end();
+//                l is always index ahead than k
+                int i = this->startingIndex.at(k) - this->previousStartingIndex.at(k);
+                int j = this->startingIndex.at(l) - this->previousStartingIndex.at(l);
 
-                intIterator i1Start = stringInts.at(i).begin() + this->startingIndex.at(i);
-                intIterator i2Start = stringInts.at(j).begin() + this->startingIndex.at(j);
-                intIterator i1End = stringInts.at(i).end();
-                intIterator i2End = stringInts.at(j).end();
+                float temp = storeCosts[i][j][k][l];
 
-                string* s1 = new string( s1Start, s1End);
-                string* s2 = new string( s2Start, s2End);
-                vector<int> v1( i1Start, i1End);
-                vector<int> v2( i2Start, i2End);
+                stringCostSum[k] += temp;
+                stringCostSum[l] += temp;
 
-//                if( depth == 1 )
-//                    cout << "\nStrings for editDistance " << *s1 << " " << *s2;
-
-
-                float temp = editDistance( *s1, *s2, v1, v2, depth );
-
-//                if( depth == 1 )
-//                    cout << " " << s3 << " " << s4;
-
-                M[i][j] = temp;
-                M[j][i] = temp;
-                stringCostSum[i] += temp;
-                stringCostSum[j] += temp;
-
-                delete s1;
-                delete s2;
-                v1.clear();
-                v2.clear();
             }
         }
 
@@ -455,7 +447,6 @@ public:
                 tempMinCost = stringCostSum[i];
                 tempMinIndex = i;
             }
-            delete [] M[i];
         }
 
 //        if( depth == 1 )
@@ -467,51 +458,37 @@ public:
         vector<string> Si;
 
 //        find all the aligned strings aligned with the most similar string
-        for( int i = 0; i < stringNumber; i++ ) {
-            if( i != tempMinIndex ) {
-                stringIterator s1Start = strings.at(tempMinIndex).begin() + this->startingIndex.at(tempMinIndex);
-                stringIterator s2Start = strings.at(i).begin() + this->startingIndex.at(i);
-                stringIterator s1End = strings.at(tempMinIndex).end();
-                stringIterator s2End = strings.at(i).end();
+        for( int l = 0; l < stringNumber; l++ ) {
+            if( l != tempMinIndex ) {
 
-                intIterator i1Start = stringInts.at(tempMinIndex).begin() + this->startingIndex.at(tempMinIndex);
-                intIterator i2Start = stringInts.at(i).begin() + this->startingIndex.at(i);
-                intIterator i1End = stringInts.at(tempMinIndex).end();
-                intIterator i2End = stringInts.at(i).end();
 
-                string* s1 = new string( s1Start, s1End);
-                string* s2 = new string( s2Start, s2End);
-                vector<int> v1( i1Start, i1End);
-                vector<int> v2( i2Start, i2End);
+                int i = this->startingIndex.at(tempMinIndex) - this->previousStartingIndex.at(tempMinIndex);
+                int j = this->startingIndex.at(l) - this->previousStartingIndex.at(l);
 
-                editDistance( *s1, *s2, v1, v2, depth );
-
-//                now I have s3 and s4 with me which are the aligned
-
-                Sc.push_back( s3 );
-                Si.push_back( s4 );
-
-                delete s1;
-                delete s2;
-                v1.clear();
-                v2.clear();
+                if( tempMinIndex < l ) {
+                    Sc.push_back( storeStrings[i][j][tempMinIndex][l][0] );
+                    Si.push_back( storeStrings[i][j][tempMinIndex][l][1] );
+                } else {
+                    Sc.push_back( storeStrings[j][i][l][tempMinIndex][1] );
+                    Si.push_back( storeStrings[j][i][l][tempMinIndex][0] );
+                }
 
             } else {
                 Sc.push_back( "" );
                 Si.push_back( "" );
             }
 //            if( depth == 1 ) {
-//                cout << Sc.at(i) << " " << Si.at(i) << endl;
+                cout << "Sc and Si are - " << Sc.at(l) << " " << Si.at(l) << endl;
 //            }
         }
 
 //        now I have Sc and Si, now I have to find the global alignment
 
         if( tempMinIndex != 0 ){
-//            cout << "\nPushing Sc " << Sc[0] << endl;
+            cout << "\nPushing Sc0 " << Sc[0] << endl;
             globalAlignment.push_back( Sc[0] );
         }else{
-//            cout << "\nPushing Sc " << Sc[1] << endl;
+            cout << "\nPushing Sc1 " << Sc[1] << endl;
             globalAlignment.push_back( Sc[1] );
         }
 
@@ -521,7 +498,7 @@ public:
                 int j = 0;
                 while( j != max ) {
 
-                     max = ((globalAlignment[0]).size() > (Sc[i]).size() ? (globalAlignment[0]).size() : (Sc[i]).size());
+                    max = ((globalAlignment[0]).size() > (Sc[i]).size() ? (globalAlignment[0]).size() : (Sc[i]).size());
 
                     if( j >= (globalAlignment[0]).size() ) {
 //                        cout << "1.Adding hyphen\n";
@@ -557,7 +534,7 @@ public:
 //        now I have a full alignment, I have to calculate the cost now which will be my estimate
 
         string temp;
-        for( int i = 0; i < (globalAlignment[0]).size(); i++ ) {
+            for( int i = 0; i < (globalAlignment[0]).size(); i++ ) {
             temp.clear();
             for( int j = 0; j < globalAlignment.size(); j++ ) {
                 temp.push_back( globalAlignment[j][i] );
@@ -612,14 +589,13 @@ public:
 //        if( depth == 3 )
 //            cout << "\nHeuristic min cost - " << heuristicMinCost << endl;
 
-        delete [] M;
         delete [] stringCostSum;
 
         Sc.clear();
         Si.clear();
         globalAlignment.clear();
         temp.clear();
-
+cout << "Finding h done\n";fflush(stdout);
 //        if( depth == 1 )
 //            cout << "heursitc value - " << heuristicMinCost;
     }
@@ -628,6 +604,59 @@ public:
 //    will return a vector of all next states
     vector<state> exploreStates() {
         tempStates.clear();
+
+//        setup all the result of edit distances so that it will be used by its children
+
+//        the string who comes before the other will be at index 0
+        for( int i = 0; i < 2; i++ ) {
+            for( int j = 0; j < 2; j++ ) {
+                for( int k = 0; k < stringNumber; k++ ) {
+                    if( (strings.at(k).size()) <= this->startingIndex.at(k) + i )
+                        continue;
+
+                    for( int l = k+1; l < stringNumber; l++ ) {
+                        if( (strings.at(l).size()) <= this->startingIndex.at(l) + j )
+                            continue;
+
+//                        cout << "Setting iterators\n";fflush(stdout);
+                        stringIterator s1Start = strings.at(k).begin() + this->startingIndex.at(k) + i;
+                        stringIterator s2Start = strings.at(l).begin() + this->startingIndex.at(l) + j;
+                        stringIterator s1End = strings.at(k).end();
+                        stringIterator s2End = strings.at(l).end();
+
+                        intIterator i1Start = stringInts.at(k).begin() + this->startingIndex.at(k) + i;
+                        intIterator i2Start = stringInts.at(l).begin() + this->startingIndex.at(l) + j;
+                        intIterator i1End = stringInts.at(k).end();
+                        intIterator i2End = stringInts.at(l).end();
+
+                        string* s1 = new string( s1Start, s1End);
+                        string* s2 = new string( s2Start, s2End);
+                        vector<int> v1( i1Start, i1End);
+                        vector<int> v2( i2Start, i2End);
+
+//                        if( depth == 1 )
+//                            cout << "\nStrings for editDistance " << *s1 << " " << *s2;
+
+
+//                        cout << "About to call edit distance\n";fflush(stdout);
+                        float temp = editDistance( *s1, *s2, v1, v2, depth );
+
+                        storeStrings[i][j][k][l][0] = s3;
+                        storeStrings[i][j][k][l][1] = s4;
+                        storeCosts[i][j][k][l] = temp;
+
+                        delete s1;
+                        delete s2;
+                        v1.clear();
+                        v2.clear();
+//                        cout << "Doing";
+                   }
+                }
+
+            }
+        }
+
+
         getState( 0 );
 
 //        to remove the last entry which indicates inserting hyphens for each string which is completely useless
@@ -663,14 +692,14 @@ public:
         if( tempStates.size() > 1 ) {
                 minEstimate = (tempStates.back()).heuristicMinCost + (tempStates.back()).costIncurred;
 
-//            attempt to prune worse nodes
-            while( true ) {
-                if( minEstimate < (tempStates.at(0)).costIncurred + (tempStates.at(0)).heuristicMinCost ) {
-//                    cout << " Pruning nodes";
-                    tempStates.erase( tempStates.begin() );
-                } else
-                    break;
-            }
+////            attempt to prune worse nodes
+//            while( true ) {
+//                if( minEstimate < (tempStates.at(0)).costIncurred + (tempStates.at(0)).heuristicMinCost ) {
+////                    cout << " Pruning nodes";
+//                    tempStates.erase( tempStates.begin() );
+//                } else
+//                    break;
+//            }
         }
         fflush(stdout);
         return tempStates;
@@ -832,6 +861,8 @@ main() {
         if( ttime - timeTaken < 10 )
             goto done;
 
+        cout << "Doing\n";
+
         static int timer = 0;
         timer++;
 
@@ -913,108 +944,3 @@ main() {
 
     return 0;
 }
-
-
-/*
-
-Strings for editDistance T TGA T-- TGA
-Strings for editDistance T GTG -T- GTG
-Strings for editDistance T TCGA T--- TCGA
-Strings for editDistance T G T G
-Strings for editDistance T  T -
-Strings for editDistance TGA GTG TGA GTG
-Strings for editDistance TGA TCGA T-GA TCGA
-Strings for editDistance TGA G TGA -G-
-Strings for editDistance TGA  TGA ---
-Strings for editDistance GTG TCGA GTG- TCGA
-Strings for editDistance GTG G GTG --G
-Strings for editDistance GTG  GTG ---
-Strings for editDistance TCGA G TCGA --G-
-Strings for editDistance TCGA  TCGA ----
-Strings for editDistance G  G -
-
-T-- TGA
--T- GTG
-T--- TCGA
-T G
-T -
-Final alignment by Center Star
--T--
--TGA
-GTG
--TCGA
--G--
-----
-
--T--
--TGA
--TG
--TCGA
-
-Heuristic min cost - 37
-
-Strings for editDistance T TGA T-- TGA
-Strings for editDistance T GTG -T- GTG
-Strings for editDistance T TCGA T--- TCGA
-Strings for editDistance T G T G
-Strings for editDistance T A T A
-Strings for editDistance TGA GTG TGA GTG
-Strings for editDistance TGA TCGA T-GA TCGA
-Strings for editDistance TGA G TGA -G-
-Strings for editDistance TGA A TGA --A
-Strings for editDistance GTG TCGA GTG- TCGA
-Strings for editDistance GTG G GTG --G
-Strings for editDistance GTG A GTG -A-
-Strings for editDistance TCGA G TCGA --G-
-Strings for editDistance TCGA A TCGA ---A
-Strings for editDistance G A G A
-
-T-- TGA
--T- GTG
-T--- TCGA
-T G
-T A
-Final alignment by Center Star
--T--
--TGA
-GTG
--TCGA
--G--
--A--
-
-Heuristic min cost - 33.5
-
-Strings for editDistance T TGA T-- TGA
-Strings for editDistance T GTG -T- GTG
-Strings for editDistance T GTCGA -T--- GTCGA
-Strings for editDistance T  T -
-Strings for editDistance T  T -
-Strings for editDistance TGA GTG TGA GTG
-Strings for editDistance TGA GTCGA -T-GA GTCGA
-Strings for editDistance TGA  TGA ---
-Strings for editDistance TGA  TGA ---
-Strings for editDistance GTG GTCGA GT-G- GTCGA
-Strings for editDistance GTG  GTG ---
-Strings for editDistance GTG  GTG ---
-Strings for editDistance GTCGA  GTCGA -----
-Strings for editDistance GTCGA  GTCGA -----
-Strings for editDistance
-
-T-- TGA
--T- GTG
--T--- GTCGA
-T -
-T -
-
--T---
--TGA-
-GTG--
-GTCGA
-
-
-
-
-
-
-
-*/
