@@ -1,4 +1,4 @@
-5.5
+1
 13
 A, C, T, G, a, s, d, f, g, h, j, k, l
 5
@@ -22,3 +22,33 @@ GCCCCCCCCCC
 2 2 2 2 2 2 2 2 2 2 2 0 2 1
 2 2 2 2 2 2 2 2 2 2 2 2 0 1
 1 1 1 1 1 1 1 1 1 1 1 1 1 0
+
+
+
+Parent node
+Starting index of each string - 9 7877
+sfdhGTATG
+aTdA-gCa-
+GTCAGTCl-
+-C-GACATG
+-GCCCCCC-
+
+Total 9 characters in 1st string
+
+This node
+Starting index of each string - 108888
+String upto this state including this state - 
+sfdhGTATGT lka
+aTdA-gCa-G 
+GTCAGTCl--
+-C-GACATGd
+-GCCCCCC-C
+
+ij - 11011
+
+ijkl -> 1113
+
+
+
+
+1.1 and 0 gives 204(minimum) in 36/42 seconds (16085 nodes total)

@@ -17,7 +17,7 @@ float ttime;
 
 time_t begt, endt;
 
-long c = 0 , d = 0;
+bool isSubOptimal;
 
 // name justifies
 float mcAvg = 0;
@@ -287,9 +287,6 @@ public:
 
         endt = clock();
 
-        c++;
-//        if( !(c % 1000000) )
-//            cout << "Constructed " << c << endl;
         this->startingIndex = startingIndex;
         this->previousStartingIndex = previousStartingIndex;
 
@@ -326,10 +323,10 @@ public:
 //        find cost incurred after matching
         this->costIncurred = findCost( currentConcern );
         this->costSoFar = costIncurred + previousCostSoFar;
-        if( depth == 1 ) {
+//        if( depth == 1 ) {
 //            viewStateInfo();
 //            cout << "GONNA check heuristic\n";
-        }
+//        }
 
         heuristic();
 
@@ -339,9 +336,6 @@ public:
     }
 
     ~state() {
-        d++;
-//        if( !(d % 1000000) )
-//            cout << "Destructed  " << d << endl;
         this->currentConcern.clear();
         this->previousCostInput.clear();
         this->startingIndex.clear();
@@ -409,7 +403,7 @@ public:
 // desirability of coming to this states is determined
     void heuristic() {
 
-        cout << "Finding h";fflush(stdout);
+//        cout << "Finding h";fflush(stdout);
 
         heuristicMinCost = 0;
 
@@ -461,10 +455,9 @@ public:
         for( int l = 0; l < stringNumber; l++ ) {
             if( l != tempMinIndex ) {
 
-
                 int i = this->startingIndex.at(tempMinIndex) - this->previousStartingIndex.at(tempMinIndex);
                 int j = this->startingIndex.at(l) - this->previousStartingIndex.at(l);
-
+//                cout << "ij - " << i << " " << j << endl;
                 if( tempMinIndex < l ) {
                     Sc.push_back( storeStrings[i][j][tempMinIndex][l][0] );
                     Si.push_back( storeStrings[i][j][tempMinIndex][l][1] );
@@ -478,17 +471,17 @@ public:
                 Si.push_back( "" );
             }
 //            if( depth == 1 ) {
-                cout << "Sc and Si are - " << Sc.at(l) << " " << Si.at(l) << endl;
+//                cout << "Sc and Si are - " << Sc.at(l) << " " << Si.at(l) << endl;
 //            }
         }
 
 //        now I have Sc and Si, now I have to find the global alignment
 
         if( tempMinIndex != 0 ){
-            cout << "\nPushing Sc0 " << Sc[0] << endl;
+//            cout << "\nPushing Sc0 " << Sc[0] << endl;
             globalAlignment.push_back( Sc[0] );
         }else{
-            cout << "\nPushing Sc1 " << Sc[1] << endl;
+//            cout << "\nPushing Sc1 " << Sc[1] << endl;
             globalAlignment.push_back( Sc[1] );
         }
 
@@ -595,7 +588,7 @@ public:
         Si.clear();
         globalAlignment.clear();
         temp.clear();
-cout << "Finding h done\n";fflush(stdout);
+//cout << "Finding h done\n";fflush(stdout);
 //        if( depth == 1 )
 //            cout << "heursitc value - " << heuristicMinCost;
     }
@@ -611,11 +604,11 @@ cout << "Finding h done\n";fflush(stdout);
         for( int i = 0; i < 2; i++ ) {
             for( int j = 0; j < 2; j++ ) {
                 for( int k = 0; k < stringNumber; k++ ) {
-                    if( (strings.at(k).size()) <= this->startingIndex.at(k) + i )
+                    if( (strings.at(k).size()) < this->startingIndex.at(k) + i )
                         continue;
 
                     for( int l = k+1; l < stringNumber; l++ ) {
-                        if( (strings.at(l).size()) <= this->startingIndex.at(l) + j )
+                        if( (strings.at(l).size()) < this->startingIndex.at(l) + j )
                             continue;
 
 //                        cout << "Setting iterators\n";fflush(stdout);
@@ -644,6 +637,9 @@ cout << "Finding h done\n";fflush(stdout);
                         storeStrings[i][j][k][l][0] = s3;
                         storeStrings[i][j][k][l][1] = s4;
                         storeCosts[i][j][k][l] = temp;
+
+//                        cout << "Pushing at ijkl0 - " << i << " " << j << " " << k << " " << l << " 0 - " << s3 << endl;
+//                        cout << "Pushing at ijkl1 - " << i << " " << j << " " << k << " " << l << " 1 - " << s4 << endl;
 
                         delete s1;
                         delete s2;
@@ -680,28 +676,19 @@ cout << "Finding h done\n";fflush(stdout);
                 return false;
         });
 
-//        cout << "Checking the nodes to be returned\n";
-//        fflush(stdout);
-//        for_each( tempStates.begin(), tempStates.end(), [](state s){
-//            cout << s.heuristicMinCost + s.costIncurred << endl;
-//        });
-//        cout << "Checked\n";
-        fflush(stdout);
-
         float minEstimate = 0;
         if( tempStates.size() > 1 ) {
                 minEstimate = (tempStates.back()).heuristicMinCost + (tempStates.back()).costIncurred;
 
-////            attempt to prune worse nodes
+//            attempt to prune worse nodes
 //            while( true ) {
-//                if( minEstimate < (tempStates.at(0)).costIncurred + (tempStates.at(0)).heuristicMinCost ) {
+//                if( minEstimate + 10 < (tempStates.at(0)).costIncurred + (tempStates.at(0)).heuristicMinCost ) {
 ////                    cout << " Pruning nodes";
 //                    tempStates.erase( tempStates.begin() );
 //                } else
 //                    break;
 //            }
         }
-        fflush(stdout);
         return tempStates;
     }
 
@@ -741,6 +728,9 @@ cout << "Finding h done\n";fflush(stdout);
 // input is the set of indices of vocab which represents character of string
 
 main() {
+
+    isSubOptimal = true;
+
     divideFactor = 0.9;
     begt = clock();
 
@@ -791,29 +781,6 @@ main() {
         temp1.clear();
     }
 
-
-////    setting the maximum length of strings
-//    vecStringIterator tempvsIt= max_element( strings.begin(), strings.end(), []( string s1, string s2 ){
-//       return s1.size() < s2.size();
-//    });
-//    for_each( strings.begin(), strings.end(), [&](string s) {
-//        if( (*tempvsIt).size() == s.size() )
-//            isMaxLength.push_back( true );
-//        else
-//            isMaxLength.push_back( false );
-//    });
-
-//    for_each( isMaxLength.begin(), isMaxLength.end(), [](bool b){cout<<b;});
-
-////    compute average of MC's component
-//    float mcSum = 0;
-//    for( int i = 0; i < vocabNumber; i++ ) {
-//        for( int j = 0; j < i; j++ ) {
-//            mcSum += MC[i][j];
-//        }
-//    }
-//    mcAvg = (mcSum) / ((vocabNumber*vocabNumber-vocabNumber) / 2);
-
 //    check if input received properly or not
     cout << "\nInput strings\n";
     for_each(strings.begin(), strings.end(), [](string s){cout<<s<<endl;});
@@ -858,13 +825,14 @@ main() {
     do {
 
 //        return the result obtained, no time is left
-        if( ttime - timeTaken < 10 )
+        if( ttime - timeTaken < 10 || divideFactor > 1.6 )
             goto done;
 
-        cout << "Doing\n";
+//        cout << "Doing\n";
 
         static int timer = 0;
         timer++;
+
 
 //        currentState = pendingStates.back();
 //        pendingStates.pop_back();

@@ -1,4 +1,4 @@
-5.5
+1
 13
 A, C, T, G, a, s, d, f, g, h, j, k, l
 5
@@ -22,6 +22,7 @@ GCCCCCCCCCC
 2 2 2 2 2 2 2 2 2 2 2 0 2 1
 2 2 2 2 2 2 2 2 2 2 2 2 0 1
 1 1 1 1 1 1 1 1 1 1 1 1 1 0
+
 
 
 1.1 and 0 gives 204(minimum) in 36/42 seconds (16085 nodes total)
